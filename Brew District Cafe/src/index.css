@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&family=Jersey+25&display=swap");
+@import "tailwindcss";
+@theme {
+  --color-CreamBackgournd: #faf3e7;
+  --color-DarkGreen: #1f3a2e;
+  --color-Orange: #d97732;
+  --color-Brown-200: #6b4632;
+  --color-Brown-700: #321200;
+  --color-Time: #d9d9d9;
+}
+#logo {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

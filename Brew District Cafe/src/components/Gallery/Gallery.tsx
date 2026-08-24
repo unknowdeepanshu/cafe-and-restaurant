@@ -1,0 +1,90 @@
+import CoffeeFront from "/Gallery/CafeFrontView.jpg";
+import CafeTable from "/Gallery/cafeTable.jpg";
+import WindowView from "/Gallery/windowView.jpg";
+import DeskView from "/Gallery/deskView.jpg";
+import CoffeeCream from "/Gallery/coffeeCream.jpg";
+import DeskVIew2 from "/Gallery/deskVIew2.jpg";
+import { motion } from "motion/react";
+function Gallery() {
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.3,
+        delayChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: {
+      opacity: 0,
+      y: 30,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  } as const;
+  return (
+    <>
+      <motion.section
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="mx-16 mt-40 min-h-screen"
+      >
+        <motion.div variants={itemVariants}>
+          <div className="inline-block">
+            <h1 className="text-DarkGreen text-[3.5rem]">Gallery</h1>
+            <hr className="bg-Orange h-1 w-full border-0" />
+          </div>
+        </motion.div>
+        <motion.div variants={itemVariants} className="flex flex-col gap-14">
+          <div className="flex w-full justify-between gap-6">
+            <img
+              src={CoffeeFront}
+              alt="CoffeeFront"
+              className="h-[34rem] object-cover"
+            />
+            <img
+              src={CafeTable}
+              alt="Cafe table"
+              className="h-[34rem] w-full object-cover"
+            />
+          </div>
+          <div className="flex w-full justify-between gap-6">
+            <img
+              src={WindowView}
+              alt="Cafe table"
+              className="h-[34rem] w-full object-cover"
+            />
+            <img
+              src={DeskView}
+              alt="CoffeeFront"
+              className="h-[34rem] object-cover"
+            />
+          </div>
+          <div className="flex w-full justify-between gap-6">
+            <img
+              src={DeskVIew2}
+              alt="CoffeeFront"
+              className="h-[34rem] object-cover"
+            />
+            <img
+              src={CoffeeCream}
+              alt="Cafe table"
+              className="h-[34rem] w-full object-cover"
+            />
+          </div>
+        </motion.div>
+      </motion.section>
+    </>
+  );
+}
+
+export default Gallery;
