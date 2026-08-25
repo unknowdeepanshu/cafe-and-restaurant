@@ -1,9 +1,9 @@
-import CoffeeFront from "/Gallery/CafeFrontView.jpg";
-import CafeTable from "/Gallery/cafeTable.jpg";
-import WindowView from "/Gallery/windowView.jpg";
-import DeskView from "/Gallery/deskView.jpg";
-import CoffeeCream from "/Gallery/coffeeCream.jpg";
-import DeskVIew2 from "/Gallery/deskVIew2.jpg";
+import CoffeeFront from "../../assets/Gallery/CafeFrontView.jpg";
+import CafeTable from "../../assets/Gallery/cafeTable.jpg";
+import WindowView from "../../assets/Gallery/windowView.jpg";
+import DeskView from "../../assets/Gallery/deskView.jpg";
+import CoffeeCream from "../../assets/Gallery/coffeeCream.jpg";
+import DeskVIew2 from "../../assets/Gallery/deskVIew2.jpg";
 import { motion } from "motion/react";
 function Gallery() {
   const containerVariants = {

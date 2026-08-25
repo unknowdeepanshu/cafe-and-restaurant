@@ -1,7 +1,7 @@
-import drop from "/supporting/deopBelow.svg";
-import Cappuccino from "/PopularItems/Cappuccino.jpg";
-import AvcadoSandwich from "/PopularItems/avcadoSandwich.jpg";
-import GrilledSandwich from "/PopularItems/grilledSandwich.jpg";
+import drop from "../../assets/supporting/deopBelow.svg";
+import Cappuccino from "../../assets/PopularItems/Cappuccino.jpg";
+import AvcadoSandwich from "../../assets/PopularItems/avcadoSandwich.jpg";
+import GrilledSandwich from "../../assets/PopularItems/grilledSandwich.jpg";
 import { motion } from "motion/react";
 
 function PopularSection() {

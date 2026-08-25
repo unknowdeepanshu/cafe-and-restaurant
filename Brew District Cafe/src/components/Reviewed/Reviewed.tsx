@@ -1,8 +1,183 @@
 import { motion } from "motion/react";
+import Face from "../../assets/reviewed/face.jpg";
+import Face1 from "../../assets/reviewed/face1.jpg";
+import Face2 from "../../assets/reviewed/face2.jpg";
+import Face3 from "../../assets/reviewed/face3.jpg";
+import Face4 from "../../assets/reviewed/face4.jpg";
+import Face5 from "../../assets/reviewed/face5.jpg";
+import Face6 from "../../assets/reviewed/face6.jpg";
+import Face7 from "../../assets/reviewed/face7.jpg";
+import Face8 from "../../assets/reviewed/face8.jpg";
+import Face9 from "../../assets/reviewed/face9.jpg";
+import Face10 from "../../assets/reviewed/face10.jpg";
+import Face11 from "../../assets/reviewed/face11.jpg";
 
 function Reviewed() {
-  const firtReviewed = ["1", "2", "1", "2", "2", "1", "2", "1", "2", "1", "1"];
-  const secondReviewed = ["1", "2", "2", "2", "2", "2", "2", "2", "1", "2"];
+  const firtReviewed = [
+    {
+      face: Face,
+      Name: "Aarav Mehta",
+      location: "Bengaluru",
+      content:
+        "The cappuccino was smooth and perfectly balanced. Really loved the warm atmosphere too.",
+    },
+    {
+      face: Face1,
+      Name: "Riya Sharma",
+      location: "Riya Sharma",
+      content:
+        "Such a cozy place for an evening coffee. The Café Latte was excellent and the staff were friendly.",
+    },
+    {
+      face: Face2,
+      Name: "Kabir Nair",
+      location: "Koramangala, Bengaluru",
+      content:
+        "Great coffee, beautiful interiors, and a relaxed vibe. Definitely coming back.",
+    },
+    {
+      face: Face3,
+      Name: "Ananya Rao",
+      location: "HSR Layout, Bengaluru",
+      content:
+        "I tried the Mocha and absolutely loved it. Not too sweet and the chocolate flavor was perfect.",
+    },
+    {
+      face: Face4,
+      Name: "Vihaan Kapoor",
+      location: "Whitefield, Bengaluru",
+      content:
+        "One of my favorite spots for a quiet coffee break. The espresso was rich and flavorful.",
+    },
+    {
+      face: Face5,
+      Name: "Vihaan Kapoor",
+      location: "Whitefield, Bengaluru",
+      content:
+        "One of my favorite spots for a quiet coffee break. The espresso was rich and flavorful.",
+    },
+    {
+      face: Face6,
+      Name: "Meera Iyer",
+      location: "Jayanagar, Bengaluru",
+      content:
+        "The Flat White was amazing. Simple menu, great coffee, and a really welcoming atmosphere.",
+    },
+    {
+      face: Face7,
+      Name: "Arjun Malhotra",
+      location: "Bengaluru",
+      content:
+        "Loved the Cold Brew. Refreshing, smooth, and exactly what I needed on a warm afternoon.",
+    },
+    {
+      face: Face8,
+      Name: "Sana Khan",
+      location: "Indiranagar, Bengaluru",
+      content:
+        "Beautiful little café with a premium feel without being too formal. The coffee was fantastic.",
+    },
+    {
+      face: Face9,
+      Name: "Rahul Verma",
+      location: "Koramangala, Bengaluru",
+      content:
+        "The Americano was strong and smooth. Great place to sit, relax, and get some work done.",
+    },
+    {
+      face: Face10,
+      Name: "Ishita Menon",
+      location: "Bengaluru",
+      content:
+        "Really enjoyed the experience here. The staff were welcoming and the Cappuccino was delicious.",
+    },
+    {
+      face: Face11,
+      Name: "Dev Patel",
+      location: "Whitefield, Bengaluru",
+      content:
+        "Brew District has a lovely atmosphere and genuinely good coffee. The Café Latte is a must-try.",
+    },
+  ];
+  const secondReviewed = [
+    {
+      face: Face,
+      Name: "Aarav Mehta",
+      location: "Bengaluru",
+      content:
+        "The cappuccino was smooth and perfectly balanced. Really loved the warm atmosphere too.",
+    },
+    {
+      face: Face1,
+      Name: "Riya Sharma",
+      location: "Riya Sharma",
+      content:
+        "Such a cozy place for an evening coffee. The Café Latte was excellent and the staff were friendly.",
+    },
+    {
+      face: Face2,
+      Name: "Kabir Nair",
+      location: "Koramangala, Bengaluru",
+      content:
+        "Great coffee, beautiful interiors, and a relaxed vibe. Definitely coming back.",
+    },
+    {
+      face: Face3,
+      Name: "Ananya Rao",
+      location: "HSR Layout, Bengaluru",
+      content:
+        "I tried the Mocha and absolutely loved it. Not too sweet and the chocolate flavor was perfect.",
+    },
+    {
+      face: Face4,
+      Name: "Vihaan Kapoor",
+      location: "Whitefield, Bengaluru",
+      content:
+        "One of my favorite spots for a quiet coffee break. The espresso was rich and flavorful.",
+    },
+    {
+      face: Face5,
+      Name: "Vihaan Kapoor",
+      location: "Whitefield, Bengaluru",
+      content:
+        "One of my favorite spots for a quiet coffee break. The espresso was rich and flavorful.",
+    },
+    {
+      face: Face6,
+      Name: "Meera Iyer",
+      location: "Jayanagar, Bengaluru",
+      content:
+        "The Flat White was amazing. Simple menu, great coffee, and a really welcoming atmosphere.",
+    },
+    {
+      face: Face7,
+      Name: "Arjun Malhotra",
+      location: "Bengaluru",
+      content:
+        "Loved the Cold Brew. Refreshing, smooth, and exactly what I needed on a warm afternoon.",
+    },
+    {
+      face: Face8,
+      Name: "Sana Khan",
+      location: "Indiranagar, Bengaluru",
+      content:
+        "Beautiful little café with a premium feel without being too formal. The coffee was fantastic.",
+    },
+    {
+      face: Face9,
+      Name: "Rahul Verma",
+      location: "Koramangala, Bengaluru",
+      content:
+        "The Americano was strong and smooth. Great place to sit, relax, and get some work done.",
+    },
+    {
+      face: Face10,
+      Name: "Ishita Menon",
+      location: "Bengaluru",
+      content:
+        "Really enjoyed the experience here. The staff were welcoming and the Cappuccino was delicious.",
+    },
+  ];
   const containerVariants = {
     hidden: {},
     visible: {
@@ -12,7 +187,6 @@ function Reviewed() {
       },
     },
   };
-
   const itemVariants = {
     hidden: {
       opacity: 0,
@@ -72,14 +246,26 @@ function Reviewed() {
             {/* First set */}
             <div className="flex shrink-0 gap-6">
               {firtReviewed.map((e, index) => (
-                <ReviewedBox key={index} />
+                <ReviewedBox
+                  face={e.face}
+                  Name={e.Name}
+                  content={e.content}
+                  location={e.location}
+                  key={index}
+                />
               ))}
             </div>
 
             {/* Duplicate set */}
             <div className="flex shrink-0 gap-6">
               {firtReviewed.map((e, index) => (
-                <ReviewedBox key={index} />
+                <ReviewedBox
+                  face={e.face}
+                  Name={e.Name}
+                  content={e.content}
+                  location={e.location}
+                  key={index}
+                />
               ))}
             </div>
           </motion.div>
@@ -97,14 +283,26 @@ function Reviewed() {
             {/* First set */}
             <div className="flex shrink-0 gap-6">
               {secondReviewed.map((e, index) => (
-                <ReviewedBox key={index} />
+                <ReviewedBox
+                  face={e.face}
+                  Name={e.Name}
+                  content={e.content}
+                  location={e.location}
+                  key={index}
+                />
               ))}
             </div>
 
             {/* Duplicate set */}
             <div className="flex shrink-0 gap-6">
               {secondReviewed.map((e, index) => (
-                <ReviewedBox key={index} />
+                <ReviewedBox
+                  face={e.face}
+                  Name={e.Name}
+                  content={e.content}
+                  location={e.location}
+                  key={index}
+                />
               ))}
             </div>
           </motion.div>
@@ -117,12 +315,30 @@ function Reviewed() {
 
 export default Reviewed;
 
-function ReviewedBox() {
+function ReviewedBox({
+  face,
+  Name,
+  location,
+  content,
+}: {
+  face: string;
+  Name: string;
+  location: string;
+  content: string;
+}) {
   return (
     <>
-      <div className="bg-DarkGreen flex h-56 w-104 flex-col rounded-3xl">
-        <div></div>
-        <div></div>
+      <div className="bg-DarkGreen flex h-56 w-104 flex-col rounded-3xl p-5">
+        <div className="text-CreamBackgournd h-full w-96 text-[1rem] leading-[2rem] tracking-[4%]">
+          <p className="h-full">"{content}"</p>
+        </div>
+        <div className="flex gap-4">
+          <img src={face} alt="face" className="h-10 w-10 rounded-3xl" />
+          <div>
+            <h4 className="text-CreamBackgournd text-[1rem]">{Name}</h4>
+            <p className="text-CreamBackgournd text-[0.7rem]">{location}</p>
+          </div>
+        </div>
       </div>
     </>
   );

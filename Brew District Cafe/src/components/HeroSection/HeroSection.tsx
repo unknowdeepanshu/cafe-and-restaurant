@@ -1,6 +1,6 @@
 import Header from "../herader/Header";
-import ellipseSvg from "/supporting/Ellipse1.svg";
-import Coffee from "/public/hero/coffee.png";
+import ellipseSvg from "../../assets/supporting/Ellipse1.svg";
+import Coffee from "../../assets/hero/coffee.png";
 import { motion } from "motion/react";
 
 function HeroSection() {

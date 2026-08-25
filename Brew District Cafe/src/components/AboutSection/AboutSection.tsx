@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "motion/react";
-import Look1 from "/about/about1.jpg";
-import Look2 from "/about/windowsViews.jpg";
-import Look3 from "/about/windowsViews1.jpg";
+import Look1 from "../../assets/about/about1.jpg";
+import Look2 from "../../assets/about/windowsViews.jpg";
+import Look3 from "../../assets/about/windowsViews1.jpg";
 import { useEffect, useState } from "react";
 function AboutSection() {
   const cafeLook = [{ url: Look1 }, { url: Look2 }, { url: Look3 }];
@@ -28,7 +28,7 @@ function AboutSection() {
         ease: "easeInOut",
       },
     },
-  };
+  } as const;
   return (
     <>
       <motion.section
@@ -71,7 +71,7 @@ function AboutSection() {
 
             <motion.div
               variants={itemVariants}
-              className="mt-40 h-[45rem] w-1/2 overflow-hidden"
+              className="mt-40 h-180 w-1/2 overflow-hidden"
             >
               <ImagesShow cafeLook={cafeLook} />
             </motion.div>
