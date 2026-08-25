@@ -214,13 +214,13 @@ function Reviewed() {
           className="flex flex-col items-center justify-center gap-3"
         >
           <div className="inline-block">
-            <h1 className="text-DarkGreen text-[3.5rem]">
+            <h1 className="text-DarkGreen text-2xl lg:text-[3.5rem]">
               What people are saying ?
             </h1>
             <hr className="bg-Orange h-1 w-full border-0" />
           </div>
           <span>
-            <p className="w-252 text-2xl">
+            <p className="text-[0.5rem] lg:w-252 lg:text-2xl">
               Don't just take our word for it-see what our customers have to say
               about their experience!
             </p>
@@ -328,7 +328,7 @@ function ReviewedBox({
 }) {
   return (
     <>
-      <div className="bg-DarkGreen flex h-56 w-104 flex-col rounded-3xl p-5">
+      <div className="bg-DarkGreen flex flex-col rounded-3xl p-5 lg:h-56 lg:w-104">
         <div className="text-CreamBackgournd h-full w-96 text-[1rem] leading-[2rem] tracking-[4%]">
           <p className="h-full">"{content}"</p>
         </div>

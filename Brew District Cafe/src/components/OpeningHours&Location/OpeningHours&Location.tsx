@@ -64,7 +64,7 @@ function OpeningHoursLocation() {
       >
         <motion.div variants={itemVariants}>
           <div className="inline-block">
-            <h1 className="text-DarkGreen text-[3.5rem]">
+            <h1 className="text-DarkGreen text-2xl lg:text-[3.5rem]">
               Opening Hours & Location
             </h1>
             <hr className="bg-Orange h-1 w-full border-0" />
@@ -93,11 +93,11 @@ export default OpeningHoursLocation;
 function OpeningHours({ day, time }: { day: string; time: string }) {
   return (
     <>
-      <div className="bg-Time flex h-16 items-center rounded-[3rem]">
-        <h3 className="bg-Orange text-CreamBackgournd h-full w-1/2 rounded-[3rem] p-4 text-center text-4xl">
+      <div className="bg-Time flex h-12 items-center rounded-[3rem] lg:h-16">
+        <h3 className="bg-Orange text-CreamBackgournd h-full w-full rounded-[3rem] p-4 text-center text-[1rem] lg:text-4xl">
           {day}
         </h3>
-        <h3 className="p-4 text-center text-4xl">{time}</h3>
+        <h3 className="p-4 text-center text-[0.9rem] lg:text-4xl">{time}</h3>
       </div>
     </>
   );

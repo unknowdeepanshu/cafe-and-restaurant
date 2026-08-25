@@ -36,7 +36,7 @@ function Gallery() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="mx-16 mt-40 min-h-screen"
+        className="mx-16 mt-40 min-h-screen overflow-hidden"
       >
         <motion.div variants={itemVariants}>
           <div className="inline-block">
@@ -46,7 +46,7 @@ function Gallery() {
         </motion.div>
         <motion.div
           variants={itemVariants}
-          className="flex w-[60%] flex-col gap-14"
+          className="flex w-full flex-col gap-14"
         >
           <div className="flex h-full w-full justify-between gap-6">
             <img
@@ -64,24 +64,24 @@ function Gallery() {
             <img
               src={WindowView}
               alt="Cafe table"
-              className="h-[34rem] w-full object-cover"
+              className="h-[20rem] object-cover lg:h-[34rem]"
             />
             <img
               src={DeskView}
               alt="CoffeeFront"
-              className="h-[34rem] object-cover"
+              className="h-[20rem] object-cover lg:h-[34rem]"
             />
           </div>
           <div className="flex h-full w-full justify-between gap-6">
             <img
               src={DeskVIew2}
               alt="CoffeeFront"
-              className="h-[34rem] object-cover"
+              className="h-[20rem] object-cover lg:h-[34rem]"
             />
             <img
               src={CoffeeCream}
               alt="Cafe table"
-              className="h-[34rem] w-full object-cover"
+              className="h-[20rem] object-cover lg:h-[34rem]"
             />
           </div>
         </motion.div>

@@ -141,7 +141,7 @@ function FullMenu() {
             </div>
 
             <div className="flex w-1/2 items-center justify-center">
-              <p className="text-CreamBackgournd w-3xs leading-12 tracking-[7%] lg:text-4xl">
+              <p className="text-CreamBackgournd leading-12 tracking-[7%] md:w-3xs lg:text-4xl">
                 Espresso, chocolate and steamed milk
               </p>
             </div>
