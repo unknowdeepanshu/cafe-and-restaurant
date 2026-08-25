@@ -47,7 +47,7 @@ function FullMenu() {
     setMenuOffset(offset);
   });
 
-  const getItem = (position) => {
+  const getItem = (position: any) => {
     return menuItems[(position + menuOffset) % menuItems.length];
   };
 
