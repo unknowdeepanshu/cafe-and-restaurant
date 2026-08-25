@@ -40,7 +40,9 @@ function Gallery() {
       >
         <motion.div variants={itemVariants}>
           <div className="inline-block">
-            <h1 className="text-DarkGreen text-[3.5rem]">Gallery</h1>
+            <h1 className="text-DarkGreen text-2xl lg:text-[2.5rem]">
+              Gallery
+            </h1>
             <hr className="bg-Orange h-1 w-full border-0" />
           </div>
         </motion.div>
