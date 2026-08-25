@@ -46,9 +46,9 @@ function Footer() {
       >
         <motion.div
           variants={itemVariants}
-          className="mx-16 flex h-full flex-col justify-around"
+          className="mx-16 flex h-full w-full flex-col justify-around"
         >
-          <div className="md:flex-rows my-10 flex min-h-9/12 flex-col justify-between gap-5 md:my-0 md:gap-5">
+          <div className="my-10 flex min-h-9/12 flex-col justify-between gap-5 md:my-0 md:flex-row md:gap-5">
             <div className="text-CreamBackgournd flex flex-col gap-4">
               <h2 className="text-2xl lg:text-[2.5rem]">Brew District Cafe</h2>
               <p className="text-[1rem] lg:text-2xl">Follow us</p>
