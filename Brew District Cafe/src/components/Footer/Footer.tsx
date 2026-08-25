@@ -42,7 +42,7 @@ function Footer() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="bg-DarkGreen flex min-h-[30vh] flex-col gap-20"
+        className="bg-DarkGreen flex min-h-[30vh] flex-col gap-20 md:flex-row"
       >
         <motion.div
           variants={itemVariants}

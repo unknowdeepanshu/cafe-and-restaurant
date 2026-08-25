@@ -64,7 +64,7 @@ function Gallery() {
             <img
               src={WindowView}
               alt="Cafe table"
-              className="h-[20rem] object-cover lg:h-[34rem]"
+              className="h-[20rem] w-full object-cover lg:h-[34rem]"
             />
             <img
               src={DeskView}
@@ -81,7 +81,7 @@ function Gallery() {
             <img
               src={CoffeeCream}
               alt="Cafe table"
-              className="h-[20rem] object-cover lg:h-[34rem]"
+              className="h-[20rem] w-full object-cover lg:h-[34rem]"
             />
           </div>
         </motion.div>
