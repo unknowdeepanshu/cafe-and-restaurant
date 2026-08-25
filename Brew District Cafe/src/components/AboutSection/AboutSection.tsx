@@ -46,14 +46,14 @@ function AboutSection() {
               <div className="flex flex-col">
                 <div>
                   <div className="inline-block">
-                    <h1 className="text-CreamBackgournd text-[2.5rem]">
+                    <h1 className="text-CreamBackgournd text-2xl lg:text-[2.5rem]">
                       About the cafe
                     </h1>
                     <hr className="bg-Orange h-1 w-full border-0" />
                   </div>
                 </div>
-                <div className="h-fit w-3xl">
-                  <p className="text-CreamBackgournd text-2xl leading-15">
+                <div className="h-fit w-2xs lg:w-3xl">
+                  <p className="text-CreamBackgournd text-[1rem] leading-7 lg:text-2xl lg:leading-15">
                     At Brew District Cafe, we believe a great cafe is more than
                     just good coffee. It’s a place to slow down, catch up, get
                     inspired, and enjoy the little moments.From carefully
@@ -103,8 +103,8 @@ function ImagesShow({ cafeLook }: { cafeLook: ImageUrl[] }) {
           <motion.img
             key={currentIndex}
             src={cafeLook[currentIndex].url}
-            width="50%"
-            className="h-full"
+
+            className="md:w=[50%] h-full w-full"
             alt="Cafe look"
             initial={{ opacity: 0, filter: "blur(10px)" }}
             animate={{ opacity: 1, filter: "blur(0px)" }}

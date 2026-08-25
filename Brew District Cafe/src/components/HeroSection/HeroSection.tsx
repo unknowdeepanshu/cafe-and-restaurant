@@ -42,19 +42,19 @@ function HeroSection() {
             variants={itemVariants}
             className="flex h-1/2 flex-col items-center justify-center gap-5"
           >
-            <h1 className="text-Brown-200 text-6xl">
+            <h1 className="text-Brown-200 text-4xl lg:text-6xl">
               Coffee made for good conversations
             </h1>
-            <p className="w-2xl text-center text-3xl leading-7">
+            <p className="w-96 text-center text-[1rem] leading-7 md:w-2xl lg:text-3xl lg:leading-7">
               Specialty coffee, fresh brunch and homemade desserts in the heart
               of Bengaluru.
             </p>
             <div className="flex gap-6">
-              <button className="bg-Orange text-Brown-700 h-10 w-40 rounded-[0.6rem] text-[1.2rem]">
+              <button className="bg-Orange text-Brown-700 h-7 w-30 rounded-[0.6rem] text-[0.9rem] md:h-8 md:w-30 md:text-[0.9rem] lg:h-10 lg:w-40 lg:text-[1.2rem]">
                 View Menu
               </button>
 
-              <button className="bg-Orange text-Brown-700 h-10 w-40 rounded-[0.6rem] text-[1.2rem]">
+              <button className="bg-Orange text-Brown-700 h-7 w-30 rounded-[0.6rem] text-[0.9rem] md:h-8 md:w-30 md:text-[0.9rem] lg:h-10 lg:w-40 lg:text-[1.2rem]">
                 Get Direactions
               </button>
             </div>

@@ -5,6 +5,7 @@ import {
   useMotionValueEvent,
   useScroll,
 } from "motion/react";
+import Line from "../../assets/supporting/line.svg";
 import { useRef, useState } from "react";
 
 function FullMenu() {
@@ -70,10 +71,11 @@ function FullMenu() {
         {/* CIRCLE */}
         <div className="absolute z-10 h-full w-full">
           <div className="flex h-full w-full gap-40">
-            <div className="h-full w-full -translate-x-2/3">
-              <div className="flex h-full w-full items-center rounded-full border-5 border-orange-400">
-                <div className="m-36 flex h-full w-full items-center justify-end">
-                  <h1 className="text-[3.5rem]">Menu</h1>
+            <div className="h-full w-full">
+              <div className="relative flex h-full w-full items-center">
+                <img src={Line} alt="Line" className="mr-150 h-full w-full" />
+                <div className="absolute right-[-10%] ml-36 flex h-full w-full items-center">
+                  <h1 className="text-2xl lg:text-[2.5rem]">Menu</h1>
                 </div>
               </div>
             </div>
@@ -82,7 +84,7 @@ function FullMenu() {
 
         {/* MENU */}
         <div className="absolute z-20 h-full w-full">
-          <div className="relative h-full w-full">
+          <div className="relative -right-20 h-full w-full lg:right-0">
             {positions.map((position, index) => {
               const item = getItem(index);
 
@@ -112,7 +114,7 @@ function FullMenu() {
                         duration: 0.45,
                         ease: [0.22, 1, 0.36, 1],
                       }}
-                      className="text-DarkGreen text-6xl whitespace-nowrap"
+                      className="text-DarkGreen text-2xl whitespace-nowrap md:text-2xl lg:text-6xl"
                     >
                       {item}
                     </motion.div>
@@ -127,19 +129,19 @@ function FullMenu() {
       {/* RIGHT */}
       <motion.div className="flex w-1/2 items-center justify-center">
         <div className="flex items-center justify-center">
-          <div className="bg-DarkGreen flex h-[39rem] w-2xl rounded-4xl">
+          <div className="bg-DarkGreen flex rounded-4xl">
             <div className="w-1/2">
               <div className="flex h-full items-center justify-center">
                 <img
                   src={cafe}
                   alt="cafe"
-                  className="h-124 w-70 rounded-[2.5rem] object-cover"
+                  className="rounded-[2.5rem] object-cover p-4"
                 />
               </div>
             </div>
 
             <div className="flex w-1/2 items-center justify-center">
-              <p className="text-CreamBackgournd w-3xs text-4xl leading-12 tracking-[7%]">
+              <p className="text-CreamBackgournd w-3xs leading-12 tracking-[7%] lg:text-4xl">
                 Espresso, chocolate and steamed milk
               </p>
             </div>

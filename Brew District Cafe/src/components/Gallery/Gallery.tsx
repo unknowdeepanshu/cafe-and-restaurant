@@ -44,20 +44,23 @@ function Gallery() {
             <hr className="bg-Orange h-1 w-full border-0" />
           </div>
         </motion.div>
-        <motion.div variants={itemVariants} className="flex flex-col gap-14">
-          <div className="flex w-full justify-between gap-6">
+        <motion.div
+          variants={itemVariants}
+          className="flex w-[60%] flex-col gap-14"
+        >
+          <div className="flex h-full w-full justify-between gap-6">
             <img
               src={CoffeeFront}
               alt="CoffeeFront"
-              className="h-[34rem] object-cover"
+              className="h-[20rem] object-cover lg:h-[34rem]"
             />
             <img
               src={CafeTable}
               alt="Cafe table"
-              className="h-[34rem] w-full object-cover"
+              className="h-[20rem] w-full object-cover lg:h-[34rem]"
             />
           </div>
-          <div className="flex w-full justify-between gap-6">
+          <div className="flex h-full w-full justify-between gap-6">
             <img
               src={WindowView}
               alt="Cafe table"
@@ -69,7 +72,7 @@ function Gallery() {
               className="h-[34rem] object-cover"
             />
           </div>
-          <div className="flex w-full justify-between gap-6">
+          <div className="flex h-full w-full justify-between gap-6">
             <img
               src={DeskVIew2}
               alt="CoffeeFront"

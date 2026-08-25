@@ -36,16 +36,16 @@ function PopularSection() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="flex min-h-[100vh] flex-col"
+        className="flex min-h-screen flex-col"
       >
         {/* Image at the top */}
         <motion.div variants={itemVariants} className="h-1/2">
           <img src={drop} alt="drop" className="-mt-3 w-full" />
 
           {/* Content */}
-          <div className="-mt-70 flex flex-col items-center justify-center">
+          <div className="-mt-50 flex flex-col items-center justify-center lg:-mt-70">
             <div className="inline-block">
-              <h1 className="text-CreamBackgournd text-[3.5rem]">
+              <h1 className="text-CreamBackgournd text-2xl lg:text-[2.5rem]">
                 Popular Menu Items
               </h1>
 
@@ -54,10 +54,16 @@ function PopularSection() {
           </div>
         </motion.div>
 
-        <motion.div variants={itemVariants} className="mx-16 mt-70 h-1/2">
+        <motion.div
+          variants={itemVariants}
+          className="mx-16 -mt-50 h-1/2 lg:mt-70"
+        >
           <div className="mx-auto flex justify-center gap-6">
             {Items.map((item, index) => (
-              <div key={index} className="h-[30rem] w-[36rem] rounded-2xl">
+              <div
+                key={index}
+                className="h-[15rem] w-[20rem] rounded-2xl lg:h-[30rem] lg:w-[36rem]"
+              >
                 <img
                   src={item}
                   alt=" Cappuccino"
