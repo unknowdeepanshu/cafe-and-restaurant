@@ -43,9 +43,9 @@ function PopularSection() {
           <img src={drop} alt="drop" className="-mt-3 w-full" />
 
           {/* Content */}
-          <div className="-mt-50 flex flex-col items-center justify-center lg:-mt-70">
+          <div className="-mt-30 flex flex-col items-center justify-center md:-mt-40 lg:-mt-70">
             <div className="inline-block">
-              <h1 className="text-CreamBackgournd text-2xl lg:text-[2.5rem]">
+              <h1 className="text-CreamBackgournd text-[0.8rem] sm:text-2xl lg:text-[2.5rem]">
                 Popular Menu Items
               </h1>
 
@@ -56,7 +56,7 @@ function PopularSection() {
 
         <motion.div
           variants={itemVariants}
-          className="mx-16 -mt-50 h-1/2 lg:mt-70"
+          className="mx-16 mt-10 h-1/2 md:mt-10 lg:mt-10"
         >
           <div className="mx-auto flex justify-center gap-6">
             {Items.map((item, index) => (

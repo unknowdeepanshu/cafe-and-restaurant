@@ -42,7 +42,7 @@ function HeroSection() {
             variants={itemVariants}
             className="flex h-1/2 flex-col items-center justify-center gap-5"
           >
-            <h1 className="text-Brown-200 text-4xl lg:text-6xl">
+            <h1 className="text-Brown-200 text-center text-4xl lg:text-6xl">
               Coffee made for good conversations
             </h1>
             <p className="w-96 text-center text-[1rem] leading-7 md:w-2xl lg:text-3xl lg:leading-7">

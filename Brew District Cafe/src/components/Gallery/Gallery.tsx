@@ -50,41 +50,58 @@ function Gallery() {
           variants={itemVariants}
           className="flex w-full flex-col gap-14"
         >
-          <div className="flex h-full w-full justify-between gap-6">
-            <img
-              src={CoffeeFront}
-              alt="CoffeeFront"
-              className="h-[20rem] object-cover lg:h-[34rem]"
-            />
-            <img
-              src={CafeTable}
-              alt="Cafe table"
-              className="h-[20rem] w-full object-cover lg:h-[34rem]"
-            />
+          <div className="flex w-full gap-6">
+            {/* Smaller image */}
+            <div className="h-[20rem] w-1/3 overflow-hidden lg:h-[34rem]">
+              <img
+                src={CoffeeFront}
+                alt="CoffeeFront"
+                className="h-full w-full object-cover"
+              />
+            </div>
+
+            {/* Larger image */}
+            <div className="h-[20rem] w-2/3 overflow-hidden lg:h-[34rem]">
+              <img
+                src={CafeTable}
+                alt="Cafe table"
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
-          <div className="flex h-full w-full justify-between gap-6">
-            <img
-              src={WindowView}
-              alt="Cafe table"
-              className="h-[20rem] w-full object-cover lg:h-[34rem]"
-            />
-            <img
-              src={DeskView}
-              alt="CoffeeFront"
-              className="h-[20rem] object-cover lg:h-[34rem]"
-            />
+          <div className="flex w-full gap-6">
+            <div className="h-[20rem] w-2/3 overflow-hidden lg:h-[34rem]">
+              <img
+                src={WindowView}
+                alt="Window view"
+                className="h-full w-full object-cover"
+              />
+            </div>
+
+            <div className="h-[20rem] w-1/3 overflow-hidden lg:h-[34rem]">
+              <img
+                src={DeskView}
+                alt="Desk view"
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
-          <div className="flex h-full w-full justify-between gap-6">
-            <img
-              src={DeskVIew2}
-              alt="CoffeeFront"
-              className="h-[20rem] object-cover lg:h-[34rem]"
-            />
-            <img
-              src={CoffeeCream}
-              alt="Cafe table"
-              className="h-[20rem] w-full object-cover lg:h-[34rem]"
-            />
+          <div className="grid grid-cols-3 gap-6">
+            <div className="col-span-1 h-[34rem] overflow-hidden">
+              <img
+                src={CoffeeFront}
+                alt="CoffeeFront"
+                className="h-full w-full object-cover"
+              />
+            </div>
+
+            <div className="col-span-2 h-[34rem] overflow-hidden">
+              <img
+                src={CafeTable}
+                alt="Cafe table"
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
         </motion.div>
       </motion.section>

@@ -127,23 +127,15 @@ function FullMenu() {
       </div>
 
       {/* RIGHT */}
-      <motion.div className="flex w-1/2 items-center justify-center">
+      <motion.div className="flex w-1/2 items-center justify-center p-3">
         <div className="flex items-center justify-center">
           <div className="bg-DarkGreen flex rounded-4xl">
-            <div className="w-1/2">
-              <div className="flex h-full items-center justify-center">
-                <img
-                  src={cafe}
-                  alt="cafe"
-                  className="rounded-[2.5rem] object-cover p-4"
-                />
-              </div>
-            </div>
-
-            <div className="flex w-1/2 items-center justify-center">
-              <p className="text-CreamBackgournd leading-12 tracking-[7%] md:w-3xs lg:text-4xl">
-                Espresso, chocolate and steamed milk
-              </p>
+            <div className="flex h-full items-center justify-center">
+              <img
+                src={cafe}
+                alt="cafe"
+                className="rounded-[2.5rem] object-cover p-4"
+              />
             </div>
           </div>
         </div>
