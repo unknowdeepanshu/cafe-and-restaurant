@@ -32,7 +32,7 @@ function AboutSection() {
   return (
     <>
       <motion.section
-        className="flex min-h-[70vh]"
+        className="flex min-h-[70vh] overflow-hidden"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -41,29 +41,24 @@ function AboutSection() {
           variants={itemVariants}
           className="bg-DarkGreen flex w-full py-10"
         >
-          <motion.div className="mx-16 flex w-full gap-2">
+          <motion.div className="mx-3.5 flex w-full gap-2 sm:mx-16">
             <motion.div variants={itemVariants} className="mt-40 h-fit w-1/2">
               <div className="flex flex-col">
                 <div>
                   <div className="inline-block">
-                    <h1 className="text-CreamBackgournd text-[0.8rem] sm:text-2xl lg:text-[2.5rem]">
+                    <h1 className="text-CreamBackgournd text-[1.563rem] sm:text-[2rem] md:text-[3rem]">
                       About the cafe
                     </h1>
                     <hr className="bg-Orange h-1 w-full border-0" />
                   </div>
                 </div>
-                <div className="h-fit sm:w-2xs lg:w-[26rem]">
-                  <p className="text-CreamBackgournd text-[0.5rem] leading-7 sm:text-[1rem] md:text-[0.9rem] lg:text-[1rem] lg:leading-15">
-                    At Brew District Cafe, we believe a great cafe is more than
-                    just good coffee. It’s a place to slow down, catch up, get
-                    inspired, and enjoy the little moments.From carefully
-                    crafted specialty coffee to fresh brunches and homemade
-                    desserts, everything we serve is made with quality
-                    ingredients and a lot of care. Whether you’re meeting
-                    friends, taking a quiet break, or settling in with your
-                    laptop, there’s always a warm seat waiting for you.Come by
-                    for the coffee. Stay for the food, the conversations, and
-                    the welcoming Bengaluru spirit.
+                <div className="h-fit w-55.5 sm:w-[2xs] lg:w-[26rem]">
+                  <p className="text-CreamBackgournd text-[1rem] leading-10 sm:text-[1.5rem] lg:leading-15">
+                    At Brew District Cafe, great coffee is just the beginning.
+                    Enjoy specialty coffee, fresh brunches, and homemade
+                    desserts in a warm space to relax, connect, and enjoy
+                    Bengaluru's welcoming spirit. Come for the coffee, stay for
+                    the moments.
                   </p>
                 </div>
               </div>
@@ -71,7 +66,7 @@ function AboutSection() {
 
             <motion.div
               variants={itemVariants}
-              className="mt-40 h-full w-1/2 overflow-hidden sm:h-180"
+              className="mt-40 flex h-full w-1/2 items-center justify-center overflow-hidden sm:h-180"
             >
               <ImagesShow cafeLook={cafeLook} />
             </motion.div>
@@ -98,7 +93,7 @@ function ImagesShow({ cafeLook }: { cafeLook: ImageUrl[] }) {
   }, []);
   return (
     <>
-      <div className="over flex h-[60%] flex-col items-center gap-5 md:h-[100%]">
+      <div className="over flex h-[100%] flex-col items-center justify-center gap-5">
         <AnimatePresence mode="wait">
           <motion.img
             key={currentIndex}

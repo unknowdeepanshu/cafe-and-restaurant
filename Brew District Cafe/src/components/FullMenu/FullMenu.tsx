@@ -64,18 +64,20 @@ function FullMenu() {
   return (
     <section
       ref={sectionRef}
-      className="bg-CreamBackgournd mt-40 flex min-h-screen w-full"
+      className="bg-CreamBackgournd mt-10 flex min-h-[50vh] w-full"
     >
       {/* LEFT */}
-      <div className="relative flex w-1/2 overflow-hidden">
+      <div className="relative flex w-1/2 items-center justify-center overflow-hidden">
         {/* CIRCLE */}
-        <div className="absolute z-10 h-full w-full">
+        <div className="absolute z-10 h-[26rem] w-full sm:h-full">
           <div className="flex h-full w-full gap-40">
             <div className="h-full w-full">
               <div className="relative flex h-full w-full items-center">
-                <img src={Line} alt="Line" className="mr-150 h-full w-full" />
-                <div className="absolute right-[-10%] ml-36 flex h-full w-full items-center">
-                  <h1 className="text-2xl lg:text-[2.5rem]">Menu</h1>
+                <img src={Line} alt="Line" className="mr-90 h-full w-full" />
+                <div className="absolute right-[-10%] ml-36 flex h-full w-full items-center sm:right-[-5%]">
+                  <h1 className="text-[1.563rem] sm:text-[2rem] md:text-[3rem]">
+                    Menu
+                  </h1>
                 </div>
               </div>
             </div>
@@ -83,8 +85,8 @@ function FullMenu() {
         </div>
 
         {/* MENU */}
-        <div className="absolute z-20 h-full w-full">
-          <div className="relative -right-20 h-full w-full lg:right-0">
+        <div className="absolute z-20 h-[26rem] w-full sm:h-full">
+          <div className="relative -right-8 h-full w-full lg:-right-8">
             {positions.map((position, index) => {
               const item = getItem(index);
 
@@ -114,7 +116,7 @@ function FullMenu() {
                         duration: 0.45,
                         ease: [0.22, 1, 0.36, 1],
                       }}
-                      className="text-DarkGreen text-2xl whitespace-nowrap md:text-2xl lg:text-6xl"
+                      className="text-DarkGreen text-[1rem] whitespace-nowrap sm:text-[1.5rem] md:text-2xl lg:text-[2.5rem]"
                     >
                       {item}
                     </motion.div>

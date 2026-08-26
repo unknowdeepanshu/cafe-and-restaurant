@@ -1,7 +1,8 @@
 import Header from "../herader/Header";
-import ellipseSvg from "../../assets/supporting/Ellipse1.svg";
 import Coffee from "../../assets/hero/coffee.png";
 import { motion } from "motion/react";
+import Button from "../../ui/button/Button";
+import ellipseSvg from "../../assets/supporting/Ellipse1.svg";
 
 function HeroSection() {
   const containerVariants = {
@@ -37,47 +38,42 @@ function HeroSection() {
         className="flex min-h-[70vh] flex-col"
       >
         <Header />
-        <div className="relative mt-20 flex h-full flex-col items-center justify-around">
+        <div className="relative mt-20 flex h-full flex-col items-center justify-end gap-10">
           <motion.div
             variants={itemVariants}
             className="flex h-1/2 flex-col items-center justify-center gap-5"
           >
-            <h1 className="text-Brown-200 text-center text-4xl lg:text-6xl">
+            <h1 className="text-Brown-200 text-center text-[1.25rem] sm:text-[3rem]">
               Coffee made for good conversations
             </h1>
-            <p className="w-96 text-center text-[1rem] leading-7 md:w-2xl lg:text-3xl lg:leading-7">
+            <p className="w-96 text-center text-[1rem] leading-7 sm:w-full sm:text-[1.5rem]">
               Specialty coffee, fresh brunch and homemade desserts in the heart
               of Bengaluru.
             </p>
             <div className="flex gap-6">
-              <button className="bg-Orange text-Brown-700 h-7 w-30 rounded-[0.6rem] text-[0.9rem] md:h-8 md:w-30 md:text-[0.9rem] lg:h-10 lg:w-40 lg:text-[1.2rem]">
-                View Menu
-              </button>
-
-              <button className="bg-Orange text-Brown-700 h-7 w-30 rounded-[0.6rem] text-[0.9rem] md:h-8 md:w-30 md:text-[0.9rem] lg:h-10 lg:w-40 lg:text-[1.2rem]">
-                Get Direactions
-              </button>
+              <Button text="View Menu" Brown={true} />
+              <Button text="Get Directions" Brown={true} />
             </div>
           </motion.div>
-
-          <motion.img
-            variants={itemVariants}
-            src={Coffee}
-            alt="Coffee"
-            className="z-20"
-            width="40%"
-          />
-          <motion.div
-            variants={itemVariants}
-            className="relative flex h-1/2 w-full flex-col"
-          >
-            <img
-              src={ellipseSvg}
-              alt="Ellipse"
-              className="absolute -bottom-1 z-10"
-              width="100%"
+          <div className="relative mt-5 flex w-full justify-center sm:mt-40">
+            <motion.img
+              variants={itemVariants}
+              src={Coffee}
+              alt="Coffee"
+              className="absolute -top-30 z-20 w-[50%] sm:-top-40 sm:w-[50%] md:-top-50 md:w-[40%]"
             />
-          </motion.div>
+            <motion.div
+              variants={itemVariants}
+              className="relative flex h-full w-full justify-around"
+            >
+              <img
+                src={ellipseSvg}
+                alt="Ellipse"
+                // className="absolute bottom-1 z-10"
+                width="100%"
+              />
+            </motion.div>
+          </div>
         </div>
       </motion.section>
     </>

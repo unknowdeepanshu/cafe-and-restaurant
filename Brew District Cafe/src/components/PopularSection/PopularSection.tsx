@@ -36,16 +36,19 @@ function PopularSection() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="flex min-h-screen flex-col"
+        className="flex min-h-[50vh] flex-col"
       >
         {/* Image at the top */}
-        <motion.div variants={itemVariants} className="h-1/2">
-          <img src={drop} alt="drop" className="-mt-3 w-full" />
+        <motion.div
+          variants={itemVariants}
+          className="relative flex flex-col items-center"
+        >
+          <img src={drop} alt="drop" className="w-full" />
 
           {/* Content */}
-          <div className="-mt-30 flex flex-col items-center justify-center md:-mt-40 lg:-mt-70">
+          <div className="absolute flex flex-col items-center justify-center">
             <div className="inline-block">
-              <h1 className="text-CreamBackgournd text-[0.8rem] sm:text-2xl lg:text-[2.5rem]">
+              <h1 className="text-CreamBackgournd text-[1.563rem] sm:text-[2rem] md:text-[3rem]">
                 Popular Menu Items
               </h1>
 
@@ -54,20 +57,17 @@ function PopularSection() {
           </div>
         </motion.div>
 
-        <motion.div
-          variants={itemVariants}
-          className="mx-16 mt-10 h-1/2 md:mt-10 lg:mt-10"
-        >
-          <div className="mx-auto flex justify-center gap-6">
+        <motion.div variants={itemVariants} className="mx-3.5 mt-10 sm:mx-16">
+          <div className="mx-auto flex w-full justify-center gap-2">
             {Items.map((item, index) => (
               <div
                 key={index}
-                className="h-[15rem] w-[20rem] rounded-2xl lg:h-[30rem] lg:w-[36rem]"
+                className="h-[6.938rem] w-[6.938rem] rounded-[1.313rem] sm:h-[15rem] sm:w-[20rem] sm:rounded-[2.625rem] lg:h-[30rem] lg:w-[36rem]"
               >
                 <img
                   src={item}
                   alt=" Cappuccino"
-                  className="h-full w-full rounded-[2.5rem] object-cover"
+                  className="h-full w-full rounded-[1.313rem] object-cover sm:rounded-[2.625rem]"
                 />
               </div>
             ))}

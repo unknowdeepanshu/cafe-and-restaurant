@@ -30,13 +30,18 @@ function Gallery() {
       },
     },
   } as const;
+  const Images = [
+    { small: CoffeeFront, BigImage: CafeTable, value: false },
+    { small: DeskView, BigImage: WindowView, value: true },
+    { small: DeskVIew2, BigImage: CoffeeCream, value: false },
+  ];
   return (
     <>
       <motion.section
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="mx-16 mt-40 min-h-screen overflow-hidden"
+        className="mx-3.5 mt-40 min-h-screen overflow-hidden sm:mx-16"
       >
         <motion.div variants={itemVariants}>
           <div className="inline-block">
@@ -50,54 +55,14 @@ function Gallery() {
           variants={itemVariants}
           className="flex w-full flex-col gap-14"
         >
-          <div className="flex w-full gap-6">
-            {/* Smaller image */}
-            <div className="h-[20rem] w-1/3 overflow-hidden lg:h-[34rem]">
-              <img
-                src={CoffeeFront}
-                alt="CoffeeFront"
-                className="h-full w-full object-cover"
-              />
-            </div>
-
-            {/* Larger image */}
-            <div className="h-[20rem] w-2/3 overflow-hidden lg:h-[34rem]">
-              <img
-                src={CafeTable}
-                alt="Cafe table"
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </div>
-          <div className="flex w-full gap-6">
-            <div className="h-[20rem] w-2/3 overflow-hidden lg:h-[34rem]">
-              <img
-                src={WindowView}
-                alt="Window view"
-                className="h-full w-full object-cover"
-              />
-            </div>
-
-            <div className="h-[20rem] w-1/3 overflow-hidden lg:h-[34rem]">
-              <img
-                src={DeskView}
-                alt="Desk view"
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </div>
-          <div className="flex h-full w-full justify-between gap-6">
-            <img
-              src={DeskVIew2}
-              alt="CoffeeFront"
-              className="h-[20rem] object-cover lg:h-[34rem]"
+          {Images.map((e, index) => (
+            <Image
+              key={index}
+              BigImg={e.BigImage}
+              samllImg={e.small}
+              reverse={e.value}
             />
-            <img
-              src={CoffeeCream}
-              alt="Cafe table"
-              className="h-[20rem] w-full object-cover lg:h-[34rem]"
-            />
-          </div>
+          ))}
         </motion.div>
       </motion.section>
     </>
@@ -105,3 +70,39 @@ function Gallery() {
 }
 
 export default Gallery;
+
+function Image({
+  samllImg,
+  BigImg,
+  reverse,
+}: {
+  samllImg: string;
+  BigImg: string;
+  reverse: boolean;
+}) {
+  return (
+    <>
+      <div
+        className={`flex ${reverse ? "flex-row-reverse" : " "} w-full gap-6`}
+      >
+        {/* Smaller image */}
+        <div className="h-[20rem] w-1/3 overflow-hidden sm:h-[25rem] md:h-[29rem] lg:h-[34rem] xl:h-[50rem]">
+          <img
+            src={samllImg}
+            alt="CoffeeFront"
+            className="h-full w-full object-cover"
+          />
+        </div>
+
+        {/* Larger image */}
+        <div className="h-[20rem] w-2/3 overflow-hidden sm:h-[25rem] md:h-[29rem] lg:h-[34rem] xl:h-[50rem]">
+          <img
+            src={BigImg}
+            alt="Cafe table"
+            className="h-full w-full object-cover"
+          />
+        </div>
+      </div>
+    </>
+  );
+}
