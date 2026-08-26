@@ -86,22 +86,17 @@ function Gallery() {
               />
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-6">
-            <div className="col-span-1 h-[34rem] overflow-hidden">
-              <img
-                src={CoffeeFront}
-                alt="CoffeeFront"
-                className="h-full w-full object-cover"
-              />
-            </div>
-
-            <div className="col-span-2 h-[34rem] overflow-hidden">
-              <img
-                src={CafeTable}
-                alt="Cafe table"
-                className="h-full w-full object-cover"
-              />
-            </div>
+          <div className="flex h-full w-full justify-between gap-6">
+            <img
+              src={DeskVIew2}
+              alt="CoffeeFront"
+              className="h-[20rem] object-cover lg:h-[34rem]"
+            />
+            <img
+              src={CoffeeCream}
+              alt="Cafe table"
+              className="h-[20rem] w-full object-cover lg:h-[34rem]"
+            />
           </div>
         </motion.div>
       </motion.section>

@@ -46,7 +46,7 @@ function Footer() {
       >
         <motion.div
           variants={itemVariants}
-          className="mx-16 flex h-full w-full flex-col justify-around"
+          className="mx-16 flex h-full w-[50%] flex-col justify-around md:w-full"
         >
           <div className="my-10 flex min-h-9/12 flex-col justify-between gap-5 md:my-0 md:flex-row md:gap-5">
             <div className="text-CreamBackgournd flex flex-col gap-4">
@@ -101,7 +101,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="my-3 flex items-center justify-center">
             <p className="text-CreamBackgournd text-[0.5rem] lg:text-[1rem]">
               © 2026 Brew District Cafe. All rights reserved.
             </p>
