@@ -41,7 +41,7 @@ function AboutSection() {
           variants={itemVariants}
           className="bg-DarkGreen flex w-full py-10"
         >
-          <motion.div className="mx-3.5 flex w-full gap-2 sm:mx-16">
+          <motion.div className="mx-3.5 flex w-full gap-4 sm:mx-16">
             <motion.div variants={itemVariants} className="mt-40 h-fit w-1/2">
               <div className="flex flex-col">
                 <div>

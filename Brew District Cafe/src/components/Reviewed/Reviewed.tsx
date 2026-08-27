@@ -207,7 +207,7 @@ function Reviewed() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="mx-16 my-40 flex min-h-[70vh] flex-col gap-20"
+        className="mx-5.5 my-40 flex min-h-[70vh] flex-col gap-20 sm:mx-16"
       >
         <motion.div
           variants={itemVariants}
@@ -328,7 +328,7 @@ function ReviewedBox({
 }) {
   return (
     <>
-      <div className="bg-DarkGreen flex flex-col rounded-3xl p-5 lg:h-56 lg:w-104">
+      <div className="bg-DarkGreen flex h-[10rem] w-full flex-col rounded-3xl p-5 lg:h-56 lg:w-104">
         <div className="text-CreamBackgournd h-full w-96 text-[1rem] leading-[2rem] tracking-[4%]">
           <p className="h-full">"{content}"</p>
         </div>
