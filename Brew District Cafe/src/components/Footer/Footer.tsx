@@ -46,7 +46,7 @@ function Footer() {
       >
         <motion.div
           variants={itemVariants}
-          className="mx-16 flex h-full w-[50%] flex-col justify-around md:w-full"
+          className="mx-3.5 flex h-full w-[50%] flex-col justify-around sm:mx-16 md:w-full"
         >
           <div className="my-10 flex min-h-9/12 flex-col justify-between gap-5 md:my-0 md:flex-row md:gap-5">
             <div className="text-CreamBackgournd flex flex-col gap-4">

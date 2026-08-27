@@ -60,11 +60,11 @@ function OpeningHoursLocation() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="mx-16 my-20 flex min-h-screen flex-col"
+        className="mx-3.5 my-20 flex min-h-screen flex-col sm:mx-16"
       >
         <motion.div variants={itemVariants}>
           <div className="inline-block">
-            <h1 className="text-DarkGreen text-2xl lg:text-[3.5rem]">
+            <h1 className="text-DarkGreen text-2xl lg:text-[2.5rem]">
               Opening Hours & Location
             </h1>
             <hr className="bg-Orange h-1 w-full border-0" />
@@ -93,7 +93,7 @@ export default OpeningHoursLocation;
 function OpeningHours({ day, time }: { day: string; time: string }) {
   return (
     <>
-      <div className="bg-Time flex h-12 items-center rounded-[3rem] lg:h-16">
+      <div className="bg-Time flex h-15 items-center rounded-[3rem] sm:h-12 lg:h-16">
         <h3 className="bg-Orange text-CreamBackgournd h-full w-1/2 rounded-[3rem] p-4 text-center text-[1rem] lg:text-4xl">
           {day}
         </h3>
