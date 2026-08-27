@@ -46,7 +46,7 @@ function PopularSection() {
           <img src={drop} alt="drop" className="w-full" />
 
           {/* Content */}
-          <div className="absolute mt-5 flex flex-col items-center justify-center">
+          <div className="absolute mt-4 flex flex-col items-center justify-center">
             <div className="inline-block">
               <h1 className="text-CreamBackgournd text-[1.563rem] sm:text-[2rem] md:text-[3rem]">
                 Popular Menu Items
