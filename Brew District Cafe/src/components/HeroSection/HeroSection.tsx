@@ -43,7 +43,7 @@ function HeroSection() {
             variants={itemVariants}
             className="flex h-1/2 flex-col items-center justify-center gap-5"
           >
-            <h1 className="text-Brown-200 text-center text-[1.25rem] sm:text-[3rem]">
+            <h1 className="text-Brown-200 text-center text-[1.7rem] sm:text-[3rem]">
               Coffee made for good conversations
             </h1>
             <p className="w-96 text-center text-[1rem] leading-7 sm:w-full sm:text-[1.5rem]">
