@@ -37,6 +37,7 @@ function PopularSection() {
         initial="hidden"
         animate="visible"
         className="mb-10 flex flex-col md:mb-30"
+        id="Popular Menu"
       >
         {/* Image at the top */}
         <motion.div

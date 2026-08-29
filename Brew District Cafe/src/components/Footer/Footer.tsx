@@ -44,11 +44,11 @@ function Footer() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="bg-DarkGreen flex min-h-[30vh] flex-col gap-20 md:flex-row"
+        className="bg-DarkGreen flex min-h-[30vh] w-full flex-col"
       >
         <motion.div
           variants={itemVariants}
-          className="mx-3.5 flex h-full w-[50%] flex-col justify-around sm:mx-16 md:w-full"
+          className="mx-3.5 my-5 flex h-full w-[90%] flex-col justify-around sm:mx-16"
         >
           <div className="my-10 flex min-h-9/12 flex-col justify-between gap-5 md:my-0 md:flex-row md:gap-5">
             <div className="text-CreamBackgournd flex flex-col gap-4">
@@ -67,16 +67,16 @@ function Footer() {
               </div>
             </div>
             <div className="flex flex-col gap-6 md:flex-row lg:gap-10">
-              <div className="text-CreamBackgournd flex w-[7rem] flex-col gap-2">
+              <div className="text-CreamBackgournd flex w-full flex-col gap-2">
                 <h2 className="text-[1rem] lg:text-2xl">Explore</h2>
 
                 <div className="flex gap-4">
-                  <ul className="flex flex-col gap-2">
+                  <ul className="flex flex-col gap-0.5">
                     {FooterNav.map((e, index) => (
-                      <li key={index} className="flex gap-2">
-                        •{" "}
+                      <li key={index} className="flex items-center gap-2">
+                        •
                         <a
-                          href="#"
+                          href={`#${e}`}
                           className="w-full text-[0.5rem] lg:text-[1rem]"
                         >
                           {e}
@@ -86,13 +86,13 @@ function Footer() {
                   </ul>
                 </div>
               </div>
-              <div className="text-CreamBackgournd flex flex-col gap-2">
+              <div className="text-CreamBackgournd flex flex-col gap-2 md:w-[20rem]">
                 <h2 className="text-[1rem] lg:text-2xl">Contacts</h2>
                 <p className="text-[0.5rem] lg:w-3xs lg:text-[0.9rem]">
                   Follow us on Instagram for fresh brews, cafe moments and
                   something delicious.
                 </p>
-                <div className="flex flex-col gap-2 md:flex-row">
+                <div className="flex flex-col gap-2 md:w-[20rem] md:flex-row">
                   <Button text="Get Direaction" Brown={false} />
 
                   <Button text="Call us" Brown={false} />
@@ -100,12 +100,12 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="my-3 flex items-center justify-center">
-            <p className="text-CreamBackgournd text-[0.5rem] lg:text-[1rem]">
-              © 2026 Brew District Cafe. All rights reserved.
-            </p>
-          </div>
         </motion.div>
+        <div className="my-3 flex items-center justify-center">
+          <p className="text-CreamBackgournd text-[0.5rem] lg:text-[1rem]">
+            © 2026 Brew District Cafe. All rights reserved.
+          </p>
+        </div>
       </motion.section>
     </>
   );

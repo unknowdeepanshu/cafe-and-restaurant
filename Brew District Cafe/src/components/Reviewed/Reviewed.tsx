@@ -208,6 +208,7 @@ function Reviewed() {
         initial="hidden"
         animate="visible"
         className="mx-5.5 my-20 flex min-h-[40vh] flex-col gap-20 sm:mx-16"
+        id="Reviews"
       >
         <motion.div
           variants={itemVariants}

@@ -42,6 +42,7 @@ function Gallery() {
         initial="hidden"
         animate="visible"
         className="mx-3.5 mt-40 min-h-screen overflow-hidden sm:mx-16"
+        id="Gallery"
       >
         <motion.div variants={itemVariants}>
           <div className="inline-block">

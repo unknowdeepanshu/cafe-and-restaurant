@@ -65,6 +65,7 @@ function FullMenu() {
     <section
       ref={sectionRef}
       className="bg-CreamBackgournd mt-10 flex min-h-[50vh] w-full"
+      id="Full Menu"
     >
       {/* LEFT */}
       <div className="relative flex w-1/2 items-center justify-center overflow-hidden">
@@ -73,7 +74,7 @@ function FullMenu() {
           <div className="flex h-full w-full gap-40">
             <div className="h-full w-full">
               <div className="relative flex h-full w-full items-center">
-                <img src={Line} alt="Line" className="mr-90 h-full w-full" />
+                <img src={Line} alt="Line" className="mr-161 h-full w-full" />
                 <div className="absolute right-[-10%] ml-36 flex h-full w-full items-center sm:right-[-5%]">
                   <h1 className="text-[1.563rem] sm:text-[2rem] md:text-[3rem]">
                     Menu
