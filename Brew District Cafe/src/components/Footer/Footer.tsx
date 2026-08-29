@@ -4,6 +4,8 @@ import {
   IconBrandX,
 } from "@tabler/icons-react";
 import { motion } from "motion/react";
+import Button from "../../ui/button/Button";
+
 function Footer() {
   const FooterNav = [
     "About",
@@ -91,12 +93,9 @@ function Footer() {
                   something delicious.
                 </p>
                 <div className="flex flex-col gap-2 md:flex-row">
-                  <button className="bg-Orange text-CreamBackgournd h-7 w-30 rounded-[0.6rem] text-[0.9rem] md:h-8 md:w-30 md:text-[0.9rem] lg:h-10 lg:w-40 lg:text-[1.2rem]">
-                    Get Direaction
-                  </button>
-                  <button className="bg-Orange text-CreamBackgournd h-7 w-30 rounded-[0.6rem] text-[0.9rem] md:h-8 md:w-30 md:text-[0.9rem] lg:h-10 lg:w-40 lg:text-[1.2rem]">
-                    Call us
-                  </button>
+                  <Button text="Get Direaction" Brown={false} />
+
+                  <Button text="Call us" Brown={false} />
                 </div>
               </div>
             </div>
