@@ -36,14 +36,14 @@ function PopularSection() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="flex min-h-[50vh] flex-col"
+        className="mb-10 flex flex-col md:mb-30"
       >
         {/* Image at the top */}
         <motion.div
           variants={itemVariants}
           className="relative flex flex-col items-center"
         >
-          <img src={drop} alt="drop" className="w-full" />
+          <img src={drop} alt="drop" className="-m-2 w-full" />
 
           {/* Content */}
           <div className="absolute mt-4 flex flex-col items-center justify-center">

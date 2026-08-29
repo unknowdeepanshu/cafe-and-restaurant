@@ -207,7 +207,7 @@ function Reviewed() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="mx-5.5 my-40 flex min-h-[70vh] flex-col gap-20 sm:mx-16"
+        className="mx-5.5 my-20 flex min-h-[40vh] flex-col gap-20 sm:mx-16"
       >
         <motion.div
           variants={itemVariants}
@@ -228,10 +228,8 @@ function Reviewed() {
         </motion.div>
         <motion.div
           variants={itemVariants}
-          className="relative flex flex-col items-center justify-center gap-2 overflow-hidden"
+          className="relative flex flex-col items-center justify-center overflow-hidden sm:gap-2"
         >
-          <div className="pointer-events-none absolute top-0 left-0 z-10 h-full w-20 bg-gradient-to-r from-white to-transparent" />
-
           <motion.div
             className="flex w-max gap-6"
             animate={{
@@ -270,7 +268,7 @@ function Reviewed() {
             </div>
           </motion.div>
           <motion.div
-            className="flex w-max gap-6"
+            className="mt-10 flex w-max gap-6"
             animate={{
               transform: ["translateX(0%)", "translateX(10%)"],
             }}
@@ -306,7 +304,6 @@ function Reviewed() {
               ))}
             </div>
           </motion.div>
-          <div className="pointer-events-none absolute top-0 right-0 z-10 h-full w-20 bg-gradient-to-l from-white to-transparent" />
         </motion.div>
       </motion.section>
     </>
@@ -328,8 +325,8 @@ function ReviewedBox({
 }) {
   return (
     <>
-      <div className="bg-DarkGreen flex h-[10rem] w-full flex-col rounded-3xl p-5 lg:h-56 lg:w-104">
-        <div className="text-CreamBackgournd h-full w-96 text-[1rem] leading-[2rem] tracking-[4%]">
+      <div className="bg-DarkGreen flex h-40 w-full flex-col rounded-3xl p-5 lg:w-104">
+        <div className="text-CreamBackgournd h-full w-96 text-[1rem] leading-[1.5rem] tracking-[4%]">
           <p className="h-full">"{content}"</p>
         </div>
         <div className="flex gap-4">

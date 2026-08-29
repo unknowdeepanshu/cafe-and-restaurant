@@ -60,7 +60,7 @@ function HeroSection() {
               variants={itemVariants}
               src={Coffee}
               alt="Coffee"
-              className="absolute -top-30 z-20 w-[50%] sm:-top-40 sm:w-[50%] md:-top-50 md:w-[40%]"
+              className="absolute -top-20 z-20 w-[50%] sm:-top-40 sm:w-[50%] md:-top-50 md:w-[40%]"
             />
             <motion.div
               variants={itemVariants}
