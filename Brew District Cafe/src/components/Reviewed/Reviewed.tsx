@@ -215,7 +215,7 @@ function Reviewed() {
           className="flex flex-col items-center justify-center gap-3"
         >
           <div className="inline-block">
-            <h1 className="text-DarkGreen text-2xl lg:text-[3.5rem]">
+            <h1 className="text-DarkGreen text-[1.563rem] sm:text-[2rem] md:text-[3rem]">
               What people are saying ?
             </h1>
             <hr className="bg-Orange h-1 w-full border-0" />

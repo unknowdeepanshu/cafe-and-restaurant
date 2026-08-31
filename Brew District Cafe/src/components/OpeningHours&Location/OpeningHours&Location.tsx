@@ -64,7 +64,7 @@ function OpeningHoursLocation() {
       >
         <motion.div variants={itemVariants}>
           <div className="inline-block">
-            <h1 className="text-DarkGreen text-2xl lg:text-[2.5rem]">
+            <h1 className="text-DarkGreen text-[1.563rem] sm:text-[2rem] md:text-[3rem]">
               Opening Hours & Location
             </h1>
             <hr className="bg-Orange h-1 w-full border-0" />
