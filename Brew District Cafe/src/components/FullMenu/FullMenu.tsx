@@ -133,7 +133,7 @@ function FullMenu() {
               <div className="bg-DarkGreen flex h-1/2 rounded-4xl">
                 <div className="flex h-full items-center justify-center">
                   <img
-                    src={menuItems[activeIndex].Img}
+                    src={menuItems[activeIndex || 0].Img}
                     alt="cafe"
                     className="h-full rounded-[2.5rem] object-cover p-4"
                   />
@@ -144,100 +144,6 @@ function FullMenu() {
         </div>
       </section>
     </>
-  );
-}
-
-function FullMenus() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const sectionRefs = useRef<HTMLDivElement>(null);
-
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  });
-
-  const menuItems = [
-    "Cafe Latte",
-    "Cappuccino",
-    "Espresso",
-    "Americano",
-    "Mocha",
-    "Flat White",
-    "Cold Brew",
-  ];
-
-  const listY = useTransform(scrollYProgress, [0.25, 0.75], [-380, 100]);
-
-  const [activeIndex, setActiveIndex] = useState(-1);
-
-  useMotionValueEvent(listY, "change", () => {
-    const container = sectionRefs.current;
-
-    if (!container) return;
-
-    const containerRect = container.getBoundingClientRect();
-
-    const centerY = containerRect.top + containerRect.height / 2;
-
-    const items = document.querySelectorAll("#list-item");
-
-    let closestIndex = -1;
-    let closestDistance = Infinity;
-
-    items.forEach((item, index) => {
-      const rect = item.getBoundingClientRect();
-
-      const itemCenter = rect.top + rect.height / 2;
-
-      const distance = Math.abs(centerY - itemCenter);
-
-      if (distance < closestDistance) {
-        closestDistance = distance;
-        closestIndex = index;
-      }
-    });
-
-    setActiveIndex(closestIndex);
-  });
-
-  return (
-    <section
-      ref={sectionRef}
-      className="bg-CreamBackgournd relative h-[200vh]"
-      id="Full Menu"
-    >
-      <div ref={sectionRefs} className="sticky top-0 h-screen overflow-hidden">
-        <div className="flex h-full w-full items-center justify-center">
-          <div className="bg-Brown-200 relative flex h-full w-1/2 items-center justify-center overflow-hidden">
-            {/* ACTIVE AREA */}
-            <div className="pointer-events-none absolute top-1/2 z-10 h-[80px] w-full -translate-y-1/2 border-y-2 border-orange-400" />
-
-            {/* MOVING LIST */}
-            <motion.ul
-              style={{ y: listY }}
-              className="flex flex-col gap-10 pt-[30vh]"
-            >
-              {menuItems.map((item, index) => (
-                <motion.li
-                  key={`${item}-${index}`}
-
-                  animate={{
-                    opacity: activeIndex === index ? 1 : 0.5,
-                  }}
-                  transition={{
-                    duration: 0.2,
-                  }}
-                  id="list-item"
-                  className="text-DarkGreen text-4xl whitespace-nowrap"
-                >
-                  {item}
-                </motion.li>
-              ))}
-            </motion.ul>
-          </div>
-        </div>
-      </div>
-    </section>
   );
 }
 
