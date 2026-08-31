@@ -36,7 +36,7 @@ function FullMenu() {
   // const listY = useTransform(scrollYProgress, [0.3, 0.65], [-980, 600]);
 
   const [activeIndex, setActiveIndex] = useState(-1);
-
+  const currentItem = menuItems[activeIndex >= 0 ? activeIndex : 0];
   useMotionValueEvent(listY, "change", () => {
     const container = sectionRefs.current;
 
@@ -133,8 +133,8 @@ function FullMenu() {
               <div className="bg-DarkGreen flex h-1/2 rounded-4xl">
                 <div className="flex h-full items-center justify-center">
                   <img
-                    src={menuItems[activeIndex || 0].Img}
-                    alt="cafe"
+                    src={currentItem.Img}
+                    alt={currentItem.text}
                     className="h-full rounded-[2.5rem] object-cover p-4"
                   />
                 </div>
