@@ -65,7 +65,7 @@ function FullMenu() {
     });
 
     setActiveIndex(closestIndex);
-    console.log("active", activeIndex);
+    // console.log("active", activeIndex);
   });
   return (
     <>
@@ -129,9 +129,9 @@ function FullMenu() {
 
           {/* RIGHT */}
           <motion.div className="flex w-1/2 items-center justify-center p-3">
-            <div className="flex h-full items-center justify-center">
-              <div className="bg-DarkGreen flex h-1/2 rounded-4xl">
-                <div className="flex h-full items-center justify-center">
+            <div className="flex h-full w-full items-center justify-center">
+              <div className="bg-DarkGreen flex h-full w-full rounded-4xl">
+                <div className="flex h-full w-full items-center justify-center">
                   <img
                     src={currentItem.Img}
                     alt={currentItem.text}
