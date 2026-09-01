@@ -32,7 +32,7 @@ function FullMenu() {
     { text: "Cold Brew", Img: Coldbrew },
   ];
   // const menuItems = ["Cafe Latte"];
-  const listY = useTransform(scrollYProgress, [0.3, 0.65], [-380, 200]);
+  const listY = useTransform(scrollYProgress, [0.3, 0.65], [-405, 160]);
   // const listY = useTransform(scrollYProgress, [0.3, 0.65], [-980, 600]);
 
   const [activeIndex, setActiveIndex] = useState(-1);
