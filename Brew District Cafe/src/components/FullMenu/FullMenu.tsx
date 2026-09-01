@@ -6,7 +6,7 @@ import {
   useTransform,
 } from "motion/react";
 import Line from "../../assets/supporting/line.svg";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Americano from "../../assets/FullMenu/Americano.jpg";
 import Cappuccino from "../../assets/FullMenu/Cappuccino.jpg";
 import Espresso from "../../assets/FullMenu/Espresso.jpg";
@@ -31,9 +31,29 @@ function FullMenu() {
     { text: "Flat White", Img: FlatWhite },
     { text: "Cold Brew", Img: Coldbrew },
   ];
-  // const menuItems = ["Cafe Latte"];
-  const listY = useTransform(scrollYProgress, [0.4, 0.65], [-405, 160]);
-  // const listY = useTransform(scrollYProgress, [0.3, 0.65], [-980, 600]);
+  function useScreenSize() {
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+      const handleResize = () => setWidth(window.innerWidth);
+
+      window.addEventListener("resize", handleResize);
+
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    return width;
+  }
+  const width = useScreenSize();
+
+  const outputRange =
+    width < 640
+      ? [-405, 70] // Mobile
+      : width < 1024
+        ? [-405, 110] // Tablet
+        : [-405, 160]; // Desktop
+
+  const listY = useTransform(scrollYProgress, [0.4, 0.65], outputRange);
 
   const [activeIndex, setActiveIndex] = useState(-1);
   const currentItem = menuItems[activeIndex >= 0 ? activeIndex : 0];
@@ -65,7 +85,7 @@ function FullMenu() {
     });
 
     setActiveIndex(closestIndex);
-    console.log("active", activeIndex);
+    // console.log("active", activeIndex);
   });
   return (
     <>
