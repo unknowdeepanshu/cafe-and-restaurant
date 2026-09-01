@@ -67,7 +67,7 @@ function AboutSection() {
 
             <motion.div
               variants={itemVariants}
-              className="mt-40 flex h-full w-1/2 items-center justify-center overflow-hidden sm:h-180"
+              className="mt-40 flex h-full w-1/2 items-center justify-center overflow-hidden rounded-2xl sm:h-180"
             >
               <ImagesShow cafeLook={cafeLook} />
             </motion.div>
