@@ -55,15 +55,21 @@ function Footer() {
               <h2 className="text-2xl lg:text-[2.5rem]">Brew District Cafe</h2>
               <p className="text-[1rem] lg:text-2xl">Follow us</p>
               <div className="flex gap-2">
-                <IconBrandInstagram
-                  stroke={2}
-                  className="h-5 w-5 lg:h-12 lg:w-16"
-                />
-                <IconBrandFacebook
-                  stroke={2}
-                  className="h-5 w-5 lg:h-12 lg:w-16"
-                />
-                <IconBrandX stroke={2} className="h-5 w-5 lg:h-12 lg:w-16" />
+                <a href="https://x.com/DipanshuVi6799">
+                  <IconBrandInstagram
+                    stroke={2}
+                    className="h-5 w-5 lg:h-12 lg:w-16"
+                  />
+                </a>
+                <a href="https://x.com/DipanshuVi6799">
+                  <IconBrandFacebook
+                    stroke={2}
+                    className="h-5 w-5 lg:h-12 lg:w-16"
+                  />
+                </a>
+                <a href="https://x.com/DipanshuVi6799">
+                  <IconBrandX stroke={2} className="h-5 w-5 lg:h-12 lg:w-16" />
+                </a>
               </div>
             </div>
             <div className="flex flex-col gap-6 md:flex-row lg:gap-10">
@@ -93,9 +99,17 @@ function Footer() {
                   something delicious.
                 </p>
                 <div className="flex flex-col gap-2 md:w-[20rem] md:flex-row">
-                  <Button text="Get Direaction" Brown={false} />
+                  <Button
+                    text="Get Direaction"
+                    Brown={false}
+                    link="https://x.com/DipanshuVi6799"
+                  />
 
-                  <Button text="Call us" Brown={false} />
+                  <Button
+                    text="Call us"
+                    Brown={false}
+                    link="https://x.com/DipanshuVi6799"
+                  />
                 </div>
               </div>
             </div>
@@ -103,7 +117,7 @@ function Footer() {
         </motion.div>
         <div className="my-3 flex items-center justify-center">
           <p className="text-CreamBackgournd text-[0.5rem] lg:text-[1rem]">
-            © 2026 Brew District Cafe. All rights reserved.
+            © 2026 Brew District Cafe. Made by @DipanshuVi6799.
           </p>
         </div>
       </motion.section>

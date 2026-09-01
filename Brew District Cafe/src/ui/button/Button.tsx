@@ -1,4 +1,12 @@
-function Button({ text, Brown }: { text: string; Brown: boolean }) {
+function Button({
+  text,
+  Brown,
+  link,
+}: {
+  text: string;
+  Brown: boolean;
+  link: string | undefined;
+}) {
   return (
     <>
       <button
@@ -8,7 +16,10 @@ function Button({ text, Brown }: { text: string; Brown: boolean }) {
             : `bg-Orange flex h-5 items-center justify-center rounded-[0.31rem] px-6 py-3 text-[0.6rem] font-bold sm:h-10 sm:rounded-[0.625rem] sm:text-[1rem]`
         }
       >
-        <a className={Brown ? `text-Brown-700` : `text-CreamBackgournd`}>
+        <a
+          className={Brown ? `text-Brown-700` : `text-CreamBackgournd`}
+          href={link}
+        >
           {text}
         </a>
       </button>

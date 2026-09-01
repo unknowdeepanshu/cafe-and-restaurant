@@ -51,8 +51,12 @@ function HeroSection() {
               of Bengaluru.
             </p>
             <div className="flex gap-6">
-              <Button text="View Menu" Brown={true} />
-              <Button text="Opening time" Brown={true} />
+              <Button text="View Menu" Brown={true} link={undefined} />
+              <Button
+                text="Opening time"
+                Brown={true}
+                link="#OpeningHoursLocation"
+              />
             </div>
           </motion.div>
           <div className="relative mt-5 flex w-full justify-center sm:mt-40">
