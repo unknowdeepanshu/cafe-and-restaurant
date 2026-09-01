@@ -48,9 +48,9 @@ function FullMenu() {
 
   const outputRange =
     width < 640
-      ? [-405, 70] // Mobile
+      ? [-320, 70] // Mobile
       : width < 1024
-        ? [-405, 110] // Tablet
+        ? [-350, 110] // Tablet
         : [-405, 160]; // Desktop
 
   const listY = useTransform(scrollYProgress, [0.4, 0.65], outputRange);
