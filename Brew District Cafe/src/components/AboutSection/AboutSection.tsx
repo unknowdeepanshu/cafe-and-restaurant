@@ -53,7 +53,7 @@ function AboutSection() {
                     <hr className="bg-Orange h-1 w-full border-0" />
                   </div>
                 </div>
-                <div className="h-fit w-55.5 sm:w-[2xs] md:w-[20rem] lg:w-[50rem]">
+                <div className="h-fit sm:w-2xs lg:w-[28rem]">
                   <p className="text-CreamBackgournd text-[1rem] leading-10 sm:text-[1.5rem] lg:leading-15">
                     At Brew District Cafe, great coffee is just the beginning.
                     Enjoy specialty coffee, fresh brunches, and homemade
