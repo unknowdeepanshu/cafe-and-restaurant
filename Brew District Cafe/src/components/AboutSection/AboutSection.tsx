@@ -100,7 +100,7 @@ function ImagesShow({ cafeLook }: { cafeLook: ImageUrl[] }) {
             key={currentIndex}
             src={cafeLook[currentIndex].url}
 
-            className="h-full w-full"
+            className="h-full w-full rounded-2xl"
             alt="Cafe look"
             initial={{ opacity: 0, filter: "blur(10px)" }}
             animate={{ opacity: 1, filter: "blur(0px)" }}
