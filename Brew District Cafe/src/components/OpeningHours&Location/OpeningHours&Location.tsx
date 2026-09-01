@@ -94,7 +94,7 @@ function OpeningHours({ day, time }: { day: string; time: string }) {
   return (
     <>
       <div className="bg-Time flex h-15 items-center rounded-[3rem] sm:h-12 lg:h-16">
-        <h3 className="bg-Orange text-CreamBackgournd h-full w-1/2 rounded-[3rem] p-4 text-center text-[1rem] lg:text-4xl">
+        <h3 className="bg-Orange text-CreamBackgournd flex h-full w-1/2 items-center justify-center rounded-[3rem] p-4 text-center text-[0.8rem] lg:text-4xl">
           {day}
         </h3>
         <h3 className="p-4 text-center text-[0.9rem] lg:text-4xl">{time}</h3>
