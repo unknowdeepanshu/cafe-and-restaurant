@@ -207,7 +207,7 @@ function Reviewed() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="mx-5.5 my-20 flex min-h-[40vh] flex-col gap-20 sm:mx-16"
+        className="mx-5.5 my-5 flex min-h-[40vh] flex-col gap-20 sm:mx-16 md:my-20"
         id="Reviews"
       >
         <motion.div
@@ -220,8 +220,8 @@ function Reviewed() {
             </h1>
             <hr className="bg-Orange h-1 w-full border-0" />
           </div>
-          <span>
-            <p className="text-[0.5rem] lg:w-252 lg:text-2xl">
+          <span className="flex items-center justify-center text-center">
+            <p className="text-[0.9rem] lg:w-252 lg:text-2xl">
               Don't just take our word for it-see what our customers have to say
               about their experience!
             </p>
@@ -269,7 +269,7 @@ function Reviewed() {
             </div>
           </motion.div>
           <motion.div
-            className="mt-10 flex w-max gap-6"
+            className="mt-5 flex w-max gap-6"
             animate={{
               transform: ["translateX(0%)", "translateX(10%)"],
             }}

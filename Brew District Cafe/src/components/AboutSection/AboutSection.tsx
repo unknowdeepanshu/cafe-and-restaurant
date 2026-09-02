@@ -43,7 +43,10 @@ function AboutSection() {
           className="bg-DarkGreen flex w-full py-10"
         >
           <motion.div className="mx-3.5 flex w-full gap-4 sm:mx-16">
-            <motion.div variants={itemVariants} className="mt-40 h-fit w-1/2">
+            <motion.div
+              variants={itemVariants}
+              className="h-fit w-1/2 md:mt-40"
+            >
               <div className="flex flex-col">
                 <div>
                   <div className="inline-block">
@@ -67,7 +70,7 @@ function AboutSection() {
 
             <motion.div
               variants={itemVariants}
-              className="mt-40 flex h-full w-1/2 items-center justify-center overflow-hidden rounded-2xl sm:h-180"
+              className="flex h-full w-1/2 items-center justify-center overflow-hidden rounded-2xl sm:h-180 md:mt-40"
             >
               <ImagesShow cafeLook={cafeLook} />
             </motion.div>

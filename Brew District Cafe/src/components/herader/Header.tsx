@@ -9,8 +9,8 @@ function Header() {
           className="text-DarkGreen text-[1.063rem] sm:text-2xl lg:text-[2.5rem]"
         >
           Brew District Cafe
-        </h1>{" "}
-        <Button text={"Get Directions"} Brown={true} />
+        </h1>
+        <Button text={"Get Directions"} brown={true} />
       </nav>
     </>
   );

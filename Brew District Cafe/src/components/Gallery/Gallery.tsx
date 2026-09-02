@@ -54,7 +54,7 @@ function Gallery() {
         </motion.div>
         <motion.div
           variants={itemVariants}
-          className="flex w-full flex-col gap-14"
+          className="flex w-full flex-col gap-2 sm:gap-5"
         >
           {Images.map((e, index) => (
             <Image
@@ -84,7 +84,7 @@ function Image({
   return (
     <>
       <div
-        className={`flex ${reverse ? "flex-row-reverse" : " "} w-full gap-6`}
+        className={`flex ${reverse ? "flex-row-reverse" : " "} w-full gap-2 sm:gap-6`}
       >
         {/* Smaller image */}
         <div className="h-[20rem] w-1/3 overflow-hidden sm:h-[25rem] md:h-[29rem] lg:h-[34rem] xl:h-[50rem]">

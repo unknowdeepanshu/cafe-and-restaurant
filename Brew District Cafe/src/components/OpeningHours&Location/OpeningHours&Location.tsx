@@ -80,7 +80,15 @@ function OpeningHoursLocation() {
           </div>
 
           <div className="w-1/2">
-            <div className="flex h-full w-full flex-col gap-14 rounded-3xl bg-red-950"></div>
+            <div className="flex h-full w-full flex-col gap-14 rounded-3xl">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7853109.746863802!2d70.00425220465596!3d16.03815910203337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae141cc9568b2f%3A0x5ea273c914eac556!2sStarbucks%20-%20Indiranagar!5e0!3m2!1sen!2sin!4v1788337199980!5m2!1sen!2sin"
+                style={{ border: 0 }}
+                allow="fullscreen"
+                loading="lazy"
+                className="h-full w-full rounded-3xl"
+              ></iframe>
+            </div>
           </div>
         </motion.div>
       </motion.section>

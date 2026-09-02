@@ -51,10 +51,10 @@ function HeroSection() {
               of Bengaluru.
             </p>
             <div className="flex gap-6">
-              <Button text="View Menu" Brown={true} link={undefined} />
+              <Button text="View Menu" brown={true} />
               <Button
                 text="Opening time"
-                Brown={true}
+                brown={true}
                 link="#OpeningHoursLocation"
               />
             </div>
@@ -73,7 +73,7 @@ function HeroSection() {
               <img
                 src={ellipseSvg}
                 alt="Ellipse"
-                // className="absolute bottom-1 z-10"
+                className="-mb-1"
                 width="100%"
               />
             </motion.div>

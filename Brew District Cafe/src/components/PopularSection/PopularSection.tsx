@@ -63,7 +63,7 @@ function PopularSection() {
             {Items.map((item, index) => (
               <div
                 key={index}
-                className="h-[6.938rem] w-[6.938rem] rounded-[1.313rem] sm:h-[15rem] sm:w-[20rem] sm:rounded-[2.625rem] lg:h-[30rem] lg:w-[36rem]"
+                className="h-[6.938rem] w-[6.938rem] rounded-[1.313rem] sm:h-[15rem] sm:w-[20rem] sm:rounded-[2.625rem] lg:h-120 lg:w-xl"
               >
                 <img
                   src={item}

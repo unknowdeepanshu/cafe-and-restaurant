@@ -101,13 +101,13 @@ function Footer() {
                 <div className="flex flex-col gap-2 md:w-[20rem] md:flex-row">
                   <Button
                     text="Get Direaction"
-                    Brown={false}
+                    brown={false}
                     link="https://x.com/DipanshuVi6799"
                   />
 
                   <Button
                     text="Call us"
-                    Brown={false}
+                    brown={false}
                     link="https://x.com/DipanshuVi6799"
                   />
                 </div>
