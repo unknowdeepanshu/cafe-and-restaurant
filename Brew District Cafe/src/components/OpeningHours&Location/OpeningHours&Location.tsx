@@ -70,16 +70,19 @@ function OpeningHoursLocation() {
             <hr className="bg-Orange h-1 w-full border-0" />
           </div>
         </motion.div>
-        <motion.div variants={itemVariants} className="mt-8 flex w-full gap-6">
-          <div className="w-1/2">
-            <div className="flex flex-col gap-14">
+        <motion.div
+          variants={itemVariants}
+          className="mt-8 flex h-full w-full flex-col gap-6 md:flex-row"
+        >
+          <div className="w-full md:w-1/2">
+            <div className="flex flex-col gap-5 md:gap-14">
               {dayTime.map((e, index) => (
                 <OpeningHours key={index} day={e.day} time={e.time} />
               ))}
             </div>
           </div>
 
-          <div className="w-1/2">
+          <div className="h-full w-full md:w-1/2">
             <div className="flex h-full w-full flex-col gap-14 rounded-3xl">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7853109.746863802!2d70.00425220465596!3d16.03815910203337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae141cc9568b2f%3A0x5ea273c914eac556!2sStarbucks%20-%20Indiranagar!5e0!3m2!1sen!2sin!4v1788337199980!5m2!1sen!2sin"
