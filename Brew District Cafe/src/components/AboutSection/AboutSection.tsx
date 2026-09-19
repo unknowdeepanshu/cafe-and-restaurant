@@ -42,10 +42,10 @@ function AboutSection() {
           variants={itemVariants}
           className="bg-DarkGreen flex w-full py-10"
         >
-          <motion.div className="mx-3.5 flex w-full gap-4 sm:mx-16">
+          <motion.div className="mx-3.5 flex w-full flex-col gap-4 sm:mx-16 md:flex-row">
             <motion.div
               variants={itemVariants}
-              className="h-fit w-1/2 md:mt-40"
+              className="h-fit w-full md:mt-40 md:w-1/2"
             >
               <div className="flex flex-col">
                 <div>
@@ -56,7 +56,7 @@ function AboutSection() {
                     <hr className="bg-Orange h-1 w-full border-0" />
                   </div>
                 </div>
-                <div className="h-fit sm:w-2xs lg:w-[28rem]">
+                <div className="h-fit sm:w-full lg:w-[28rem]">
                   <p className="text-CreamBackgournd text-[1rem] leading-10 sm:text-[1.5rem] lg:leading-15">
                     At Brew District Cafe, great coffee is just the beginning.
                     Enjoy specialty coffee, fresh brunches, and homemade
@@ -70,7 +70,7 @@ function AboutSection() {
 
             <motion.div
               variants={itemVariants}
-              className="flex h-full w-1/2 items-center justify-center overflow-hidden rounded-2xl sm:h-180 md:mt-40"
+              className="flex h-full w-full items-center justify-center overflow-hidden rounded-2xl sm:h-180 md:mt-40 md:w-1/2"
             >
               <ImagesShow cafeLook={cafeLook} />
             </motion.div>
