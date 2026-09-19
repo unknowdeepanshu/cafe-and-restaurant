@@ -207,105 +207,107 @@ function Reviewed() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="mx-5.5 my-5 flex min-h-[40vh] flex-col gap-20 sm:mx-16 md:my-20"
+        className="overflow-hidden"
         id="Reviews"
       >
-        <motion.div
-          variants={itemVariants}
-          className="flex flex-col items-center justify-center gap-3"
-        >
-          <div className="inline-block">
-            <h1 className="text-DarkGreen text-[1.563rem] sm:text-[2rem] md:text-[3rem]">
-              What people are saying ?
-            </h1>
-            <hr className="bg-Orange h-1 w-full border-0" />
-          </div>
-          <span className="flex items-center justify-center text-center">
-            <p className="text-[0.9rem] lg:w-252 lg:text-2xl">
-              Don't just take our word for it-see what our customers have to say
-              about their experience!
-            </p>
-          </span>
-        </motion.div>
-        <motion.div
-          variants={itemVariants}
-          className="relative flex flex-col items-center justify-center overflow-hidden sm:gap-2"
-        >
+        <div className="mx-5.5 my-5 flex min-h-[40vh] flex-col gap-20 sm:mx-16 md:my-20">
           <motion.div
-            className="flex w-max gap-6"
-            animate={{
-              transform: ["translateX(10%)", "translateX(-10%)"],
-            }}
-            transition={{
-              duration: 40,
-              ease: "linear",
-              repeat: Infinity,
-            }}
+            variants={itemVariants}
+            className="flex flex-col items-center justify-center gap-3"
           >
-            {/* First set */}
-            <div className="flex shrink-0 gap-6">
-              {firtReviewed.map((e, index) => (
-                <ReviewedBox
-                  face={e.face}
-                  Name={e.Name}
-                  content={e.content}
-                  location={e.location}
-                  key={index}
-                />
-              ))}
+            <div className="inline-block">
+              <h1 className="text-DarkGreen text-[1.563rem] sm:text-[2rem] md:text-[3rem]">
+                What people are saying ?
+              </h1>
+              <hr className="bg-Orange h-1 w-full border-0" />
             </div>
-
-            {/* Duplicate set */}
-            <div className="flex shrink-0 gap-6">
-              {firtReviewed.map((e, index) => (
-                <ReviewedBox
-                  face={e.face}
-                  Name={e.Name}
-                  content={e.content}
-                  location={e.location}
-                  key={index}
-                />
-              ))}
-            </div>
+            <span className="flex items-center justify-center text-center">
+              <p className="text-[0.9rem] lg:w-252 lg:text-2xl">
+                Don't just take our word for it-see what our customers have to
+                say about their experience!
+              </p>
+            </span>
           </motion.div>
           <motion.div
-            className="mt-5 flex w-max gap-6"
-            animate={{
-              transform: ["translateX(0%)", "translateX(10%)"],
-            }}
-            transition={{
-              duration: 40,
-              ease: "linear",
-              repeat: Infinity,
-            }}
+            variants={itemVariants}
+            className="relative flex flex-col items-center justify-center sm:gap-2 md:overflow-hidden"
           >
-            {/* First set */}
-            <div className="flex shrink-0 gap-6">
-              {secondReviewed.map((e, index) => (
-                <ReviewedBox
-                  face={e.face}
-                  Name={e.Name}
-                  content={e.content}
-                  location={e.location}
-                  key={index}
-                />
-              ))}
-            </div>
+            <motion.div
+              className="flex w-max gap-6"
+              animate={{
+                transform: ["translateX(10%)", "translateX(-10%)"],
+              }}
+              transition={{
+                duration: 40,
+                ease: "linear",
+                repeat: Infinity,
+              }}
+            >
+              {/* First set */}
+              <div className="flex shrink-0 gap-6">
+                {firtReviewed.map((e, index) => (
+                  <ReviewedBox
+                    face={e.face}
+                    Name={e.Name}
+                    content={e.content}
+                    location={e.location}
+                    key={index}
+                  />
+                ))}
+              </div>
 
-            {/* Duplicate set */}
-            <div className="flex shrink-0 gap-6">
-              {secondReviewed.map((e, index) => (
-                <ReviewedBox
-                  face={e.face}
-                  Name={e.Name}
-                  content={e.content}
-                  location={e.location}
-                  key={index}
-                />
-              ))}
-            </div>
+              {/* Duplicate set */}
+              <div className="flex shrink-0 gap-6">
+                {firtReviewed.map((e, index) => (
+                  <ReviewedBox
+                    face={e.face}
+                    Name={e.Name}
+                    content={e.content}
+                    location={e.location}
+                    key={index}
+                  />
+                ))}
+              </div>
+            </motion.div>
+            <motion.div
+              className="mt-5 flex w-max gap-6"
+              animate={{
+                transform: ["translateX(0%)", "translateX(10%)"],
+              }}
+              transition={{
+                duration: 40,
+                ease: "linear",
+                repeat: Infinity,
+              }}
+            >
+              {/* First set */}
+              <div className="flex shrink-0 gap-6">
+                {secondReviewed.map((e, index) => (
+                  <ReviewedBox
+                    face={e.face}
+                    Name={e.Name}
+                    content={e.content}
+                    location={e.location}
+                    key={index}
+                  />
+                ))}
+              </div>
+
+              {/* Duplicate set */}
+              <div className="flex shrink-0 gap-6">
+                {secondReviewed.map((e, index) => (
+                  <ReviewedBox
+                    face={e.face}
+                    Name={e.Name}
+                    content={e.content}
+                    location={e.location}
+                    key={index}
+                  />
+                ))}
+              </div>
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </div>
       </motion.section>
     </>
   );
