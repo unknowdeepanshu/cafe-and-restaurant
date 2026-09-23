@@ -1,4 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&family=Fanwood+Text:ital@0;1&family=Jersey+25&family=Kameron:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+/* there text fonts  */
+#restaurantNames {
+  font-family: "Fanwood Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #0f0b08;
+}
+.fanwood-text-regular-italic {
+  font-family: "Fanwood Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+* {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+#Button {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+#Header {
+  font-family: "Kameron", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 @theme {
   /* there main backgound colors */
   --color-Backgound: #0f0b08;
@@ -7,4 +44,9 @@
   --color-texts-200: #ffffff;
   --color-texts-300: #6e1616;
   /* There is for button border and label color  */
+  --color-button-100: #c9a45c;
+  --color-button-200: #ffffff;
+  --color-button-300: #000000;
+  /* This is for card */
+  --color-card-100: #211410;
 }
