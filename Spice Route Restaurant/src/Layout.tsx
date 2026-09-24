@@ -1,13 +1,16 @@
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
+import { Outlet } from "react-router";
 
 function App() {
   return (
     <>
-      <div className="relative mx-16">
+      <div className="relative z-50 mx-16">
         <Header />
-        <main className="h-screen"></main>
       </div>
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </>
   );
