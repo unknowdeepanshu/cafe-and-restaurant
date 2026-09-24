@@ -47,6 +47,11 @@ body {
   --color-button-100: #c9a45c;
   --color-button-200: #ffffff;
   --color-button-300: #000000;
+  --color-button-400: #c28900;
   /* This is for card */
   --color-card-100: #211410;
+  /* For line and border line */
+
+  --color-line-100: #d9cdb4;
+  --color-line-200: #4a3401;
 }

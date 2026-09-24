@@ -20,23 +20,24 @@ function Header() {
           <h1 id="Header" className="text-texts-100 w-3xs text-2xl md:w-36">
             Spice Route Restaurant
           </h1>
-          <div className="hidden w-full items-center justify-around md:flex">
-            <nav className="w-fit">
-              <ul className="flex items-center">
-                {NavMenu.map((Nav, index) => (
-                  <li key={index}>
-                    <a
-                      className="text-texts-200 mx-2 md:mx-5 md:text-[1.125rem]"
-                      href={`#${Nav}`}
-                    >
-                      {Nav}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <RestaurantButton>Book a Table</RestaurantButton>
-          </div>
+
+          <nav className="hidden w-fit md:flex">
+            <ul className="flex items-center">
+              {NavMenu.map((Nav, index) => (
+                <li key={index}>
+                  <a
+                    className="text-texts-200 hover:text-texts-100 mx-2 text-[15px] transition-all duration-100 md:mx-5 lg:text-[1.125rem]"
+                    href={`#${Nav}`}
+                  >
+                    {Nav}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <RestaurantButton className="hidden md:flex">
+            Book a Table
+          </RestaurantButton>
           <button
             className="flex md:hidden"
             aria-label="Open navigation menu"
@@ -47,7 +48,7 @@ function Header() {
         </div>
         {open && (
           <div
-            className="fixed top-0 left-0 h-full w-full"
+            className="fixed top-0 left-0 z-50 h-full w-full"
             onClick={(e) => {
               if (e.target === e.currentTarget) {
                 setOpen(false);
@@ -63,7 +64,7 @@ function Header() {
                   {NavMenu.map((Nav, index) => (
                     <li key={index}>
                       <a
-                        className="text-texts-200 mx-2 text-[1.125rem]"
+                        className="text-texts-200 hover:text-texts-100 mx-2 text-[1.125rem] transition-all duration-100"
                         href={`#${Nav}`}
                       >
                         {Nav}
