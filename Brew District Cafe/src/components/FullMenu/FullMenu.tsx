@@ -155,7 +155,7 @@ function FullMenu() {
                   <img
                     src={currentItem.Img}
                     alt={currentItem.text}
-                    className="h-full rounded-[2.5rem] object-cover p-4"
+                    className="h-full w-full rounded-[2.5rem] p-4"
                   />
                 </div>
               </div>
