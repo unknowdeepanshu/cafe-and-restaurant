@@ -82,7 +82,7 @@ function DesktopCarousel() {
     setNextNumber((prev) => Math.max(prev - 1, 0));
   };
   useEffect(() => {
-    const timeout = window.setTimeout(NextImage, 4000);
+    const timeout = window.setTimeout(NextImage, 5000);
 
     return () => window.clearTimeout(timeout);
   }, [nextNumber]);
