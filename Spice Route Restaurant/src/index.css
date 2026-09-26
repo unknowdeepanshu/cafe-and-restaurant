@@ -20,6 +20,13 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+#NatoBold {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
 #Button {
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
@@ -54,6 +61,6 @@ body {
   --color-card-100: #211410;
   /* For line and border line */
 
-  --color-line-100: #d9cdb4;
+  --color-line-100: #e6cf9a;
   --color-line-200: #4a3401;
 }

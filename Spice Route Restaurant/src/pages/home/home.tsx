@@ -1,9 +1,10 @@
-import HeroSections from "@/Sections/heroSections/heroSections";
+import { HeroSections, WelcomeSections } from "@/Sections/inde";
 
 function Home() {
   return (
     <>
       <HeroSections />
+      <WelcomeSections />
     </>
   );
 }

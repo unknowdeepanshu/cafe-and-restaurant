@@ -17,7 +17,10 @@ function Header() {
     <>
       <header>
         <div className="absolute top-6 flex w-full items-center justify-between md:justify-around">
-          <h1 id="Header" className="text-texts-100 w-3xs text-2xl md:w-36">
+          <h1
+            id="restaurantNames"
+            className="text-texts-100 w-3xs text-2xl md:w-36"
+          >
             Spice Route Restaurant
           </h1>
 
