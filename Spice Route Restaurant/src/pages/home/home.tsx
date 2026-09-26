@@ -3,9 +3,7 @@ import HeroSections from "@/Sections/heroSections/heroSections";
 function Home() {
   return (
     <>
-      <div className="h-screen">
-        <HeroSections />
-      </div>
+      <HeroSections />
     </>
   );
 }
