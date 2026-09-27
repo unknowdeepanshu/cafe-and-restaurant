@@ -3,7 +3,7 @@ import welcome from "@/assets/welcome-2 1.png";
 function WelcomeSections() {
   return (
     <>
-      <section className="relative flex h-[150vh] w-full items-center justify-center md:h-screen">
+      <section className="relative flex h-fit w-full items-center justify-center md:h-screen">
         <div className="flex h-full w-full flex-col gap-5 px-16 py-30 md:flex-row md:gap-0">
           <div className="flex w-full flex-col gap-8 md:w-1/2">
             <div>
@@ -17,8 +17,8 @@ function WelcomeSections() {
                 </span>
               </h1>
             </div>
-            <div className="text-texts-200 flex w-full flex-col gap-3 md:text-2xl">
-              <p className="w-full md:w-[67%]">
+            <div className="text-texts-200 flex w-full flex-col gap-3 md:text-[1.375rem] lg:text-2xl">
+              <p className="w-full md:w-fit">
                 Where the rich flavors of North India and Mughlai cuisine meet
                 the warmth of Dubai. Enjoy timeless recipes, aromatic spices,
                 and a modern dining experience crafted for memorable moments.
