@@ -2,7 +2,8 @@ import {
   HeroSections,
   WelcomeSections,
   OpeningSections,
-} from "@/Sections/inde";
+  MenuSection,
+} from "@/Sections";
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <HeroSections />
       <WelcomeSections />
       <OpeningSections />
+      <MenuSection />
     </>
   );
 }
