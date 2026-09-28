@@ -4,7 +4,7 @@ function WelcomeSections() {
   return (
     <>
       <section className="relative flex h-fit w-full items-center justify-center md:h-screen">
-        <div className="flex h-full w-full flex-col gap-5 px-16 py-30 md:flex-row md:gap-0">
+        <div className="flex h-full w-full flex-col gap-5 px-4 py-30 md:flex-row md:gap-0 md:px-16">
           <div className="flex w-full flex-col gap-8 md:w-1/2">
             <div>
               <h1

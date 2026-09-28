@@ -5,7 +5,7 @@ import { Outlet } from "react-router";
 function App() {
   return (
     <>
-      <div className="relative z-50 mx-16">
+      <div className="relative z-50 mx-4 md:mx-16">
         <Header />
       </div>
       <main>

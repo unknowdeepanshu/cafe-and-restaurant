@@ -3,6 +3,7 @@ import {
   WelcomeSections,
   OpeningSections,
   MenuSection,
+  ChefSections,
 } from "@/Sections";
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
       <WelcomeSections />
       <OpeningSections />
       <MenuSection />
+      <ChefSections />
     </>
   );
 }
