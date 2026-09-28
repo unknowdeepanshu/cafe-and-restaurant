@@ -8,7 +8,7 @@ export function useIsMobile() {
 
   useEffect(() => {
     const mobileQuery = window.matchMedia("(max-width: 425px)");
-    const tabletQuery = window.matchMedia("(min-width: 768px)");
+    const tabletQuery = window.matchMedia("(max-width: 768px)");
     const desktopQuery = window.matchMedia("(min-width: 1024px)");
     const handleChange = () => {
       setIsMobile(mobileQuery.matches);
