@@ -12,7 +12,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { IconArrowNarrowRight, IconArrowNarrowLeft } from "@tabler/icons-react";
 function HeroSections() {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <>
