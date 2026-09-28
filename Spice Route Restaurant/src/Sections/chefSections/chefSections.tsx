@@ -16,9 +16,9 @@ function ChefSections() {
         {isMobile ? (
           <MobileViewChef />
         ) : isTablet ? (
-          <DesktopViewChef />
-        ) : (
           <TabletViewChef />
+        ) : (
+          <DesktopViewChef />
         )}
       </section>
     </>
