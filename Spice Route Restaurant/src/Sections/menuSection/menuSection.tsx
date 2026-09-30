@@ -27,7 +27,7 @@ function MenuSection() {
                   src={ima}
                   key={index}
                   alt="welcome"
-                  className="aspect-[4/5] h-auto w-full min-w-0 rounded-2xl object-cover lg:w-0 lg:flex-1"
+                  className="aspect-4/5 h-auto w-full min-w-0 rounded-2xl object-cover lg:w-0 lg:flex-1"
                 />
               ))}
             </div>
