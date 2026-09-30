@@ -14,11 +14,28 @@ function ReviewSections() {
   return (
     <>
       <section className="relative h-screen w-full overflow-hidden">
-        <img
-          src={fork}
-          alt="fork"
-          className="top-0 left-0 h-[22.679rem] w-[22.679rem]"
-        />
+        <div className="relative flex h-[37%] w-full items-center justify-center">
+          <img
+            src={fork}
+            alt="fork"
+            className="absolute top-0 left-0 h-[22.679rem] w-[22.679rem]"
+          />{" "}
+          <div className="flex w-fit flex-col items-center justify-center">
+            <p id="Header" className="text-texts-200 text-2xl">
+              What said about us
+            </p>
+            <h1
+              id="Header"
+              className="text-texts-200 inline-block text-4xl sm:text-6xl md:text-7xl"
+            >
+              Customer{" "}
+              <span id="Header" className="text-texts-300">
+                Reviews
+              </span>
+              {/* <hr className="border-line-100 w-full rounded-2xl border-2" /> */}
+            </h1>
+          </div>
+        </div>
         {isTablet ? <MobileCards /> : <DesktopCards />}
       </section>
     </>
