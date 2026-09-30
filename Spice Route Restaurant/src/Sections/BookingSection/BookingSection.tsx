@@ -240,7 +240,7 @@ function InputBox({
             max={max}
             required={required}
             onChange={(e) => onChange(e.target.value)}
-            className="text-texts-200 placeholder:text-texts-200/50 w-full min-w-0 bg-transparent text-sm [color-scheme:dark] outline-none sm:text-base"
+            className="text-texts-200 placeholder:text-texts-200/50 w-full min-w-0 bg-transparent text-sm scheme-dark outline-none sm:text-base"
           />
         ) : (
           <textarea

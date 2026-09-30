@@ -21,12 +21,12 @@ function ReviewSections() {
             className="absolute top-0 left-0 h-[22.679rem] w-[22.679rem]"
           />{" "}
           <div className="flex w-fit flex-col items-center justify-center">
-            <p id="Header" className="text-texts-200 text-2xl">
+            <p id="Header" className="text-texts-200 text-[1rem] sm:text-2xl">
               What said about us
             </p>
             <h1
               id="Header"
-              className="text-texts-200 inline-block text-4xl sm:text-6xl md:text-7xl"
+              className="text-texts-100 inline-block text-3xl sm:text-6xl md:text-7xl"
             >
               Customer{" "}
               <span id="Header" className="text-texts-300">
