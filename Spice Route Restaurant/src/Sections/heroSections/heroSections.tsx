@@ -12,12 +12,12 @@ import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { IconArrowNarrowRight, IconArrowNarrowLeft } from "@tabler/icons-react";
 function HeroSections() {
-  const { isMobile } = useIsMobile();
+  const { isTablet } = useIsMobile();
 
   return (
     <>
       <section className="h-screen w-full overflow-hidden">
-        {isMobile ? <MobileCarousel /> : <DesktopCarousel />}
+        {isTablet ? <MobileCarousel /> : <DesktopCarousel />}
       </section>
     </>
   );
@@ -309,7 +309,7 @@ function MobileCarousel() {
             </motion.div>
           </AnimatePresence>
         </motion.div>
-        <div className="absolute top-1/2 z-50 flex w-full items-center justify-between gap-10 p-2">
+        <div className="absolute top-1/2 z-40 flex w-full items-center justify-between gap-10 p-2">
           <RestaurantButton
             className="rounded-4xl border p-1"
             onClick={BackImage}

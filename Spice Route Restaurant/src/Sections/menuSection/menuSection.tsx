@@ -8,7 +8,7 @@ function MenuSection() {
   return (
     <>
       <section className="relative flex h-fit w-full items-center justify-center">
-        <div className="flex h-full w-full max-w-7xl flex-col gap-5 px-4 py-20 sm:px-8 md:gap-10 md:px-16 md:py-30">
+        <div className="flex h-full w-full flex-col gap-5 py-30 md:gap-10">
           <div className="flex w-full flex-col items-center justify-center gap-8">
             <h1
               id="Header"
@@ -21,7 +21,7 @@ function MenuSection() {
             </h1>
           </div>
           <div className="flex h-full w-full flex-col">
-            <div className="flex w-full flex-col gap-4 sm:flex-row sm:flex-wrap lg:flex-nowrap">
+            <div className="flex w-full flex-col gap-4 px-4 sm:flex-row sm:flex-wrap md:px-16 lg:flex-nowrap">
               {[Kebab, Chat, Chicken].map((ima, index) => (
                 <img
                   src={ima}

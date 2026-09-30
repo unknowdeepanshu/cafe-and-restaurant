@@ -6,7 +6,7 @@ function Label({ className, children, ...props }: LabelProps) {
   return (
     <>
       <div
-        className={cn("bg-texts-300 text-texts-100 w-fit px-7 py-3", className)}
+        className={cn("bg-line-400 text-texts-100 w-fit px-7 py-3", className)}
         {...props}
       >
         {children}

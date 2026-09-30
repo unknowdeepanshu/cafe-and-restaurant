@@ -61,7 +61,8 @@ body {
   /* This is for card */
   --color-card-100: #211410;
   /* For line and border line */
-
   --color-line-100: #e6cf9a;
   --color-line-200: #4a3401;
+  --color-line-300: #c28900;
+  --color-line-400: #6e1616;
 }
