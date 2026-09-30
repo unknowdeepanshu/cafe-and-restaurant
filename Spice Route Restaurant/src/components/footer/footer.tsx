@@ -16,8 +16,8 @@ function Footer() {
   return (
     <>
       <footer className="flex h-[70vh]">
-        <div className="flex h-full w-full flex-col md:flex-row">
-          <div className="h-full w-full bg-amber-400 md:w-1/2"></div>
+        <div className="flex h-full w-full flex-col-reverse md:flex-row">
+          <div className="h-full w-full bg-amber-100 md:w-1/2"></div>
           <div className="relative flex h-full w-full flex-col md:w-1/2">
             <img
               src={FooterImage}
