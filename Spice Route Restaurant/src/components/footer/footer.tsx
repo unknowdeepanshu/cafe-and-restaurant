@@ -53,7 +53,7 @@ function Footer() {
             </div>
             <div className="flex h-fit w-full flex-col items-center justify-center gap-2">
               <hr className="bg-line-100 h-1 w-full"></hr>
-              <div className="flex h-full w-full justify-between px-1">
+              <div className="flex h-full w-full justify-between px-3">
                 <h4 className="text-texts-100 block text-[0.938rem] lg:text-[1.063rem]">
                   © 2026 All Rights Reserved.
                 </h4>

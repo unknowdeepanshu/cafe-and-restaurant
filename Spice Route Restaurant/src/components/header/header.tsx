@@ -16,7 +16,7 @@ function Header() {
   return (
     <>
       <header>
-        <div className="absolute top-6 flex w-full items-center justify-between md:justify-around">
+        <div className="absolute top-6 flex w-full items-center justify-between">
           <h1
             id="restaurantNames"
             className="text-texts-100 w-3xs text-2xl md:w-36"

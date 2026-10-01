@@ -3,8 +3,29 @@ import Kebab from "@/assets/menuThree/Lamb Seekh Kebab.jpg";
 import Chat from "@/assets/menuThree/Samosa Chaat.jpg";
 import Chicken from "@/assets/menuThree/Butter chicken.jpg";
 import RestaurantButton from "@/ui/button/button";
+import { motion } from "motion/react";
 
 function MenuSection() {
+  const foods = [
+    {
+      Image: Kebab,
+      title: "🥙 Kebab",
+      Description:
+        "Tender, perfectly seasoned meat grilled over an open flame, delivering smoky char and rich Indian spices in every bite.",
+    },
+    {
+      Image: Chat,
+      title: "🥟 Samosa Chaat",
+      Description:
+        "Crispy golden samosas topped with tangy chutneys, creamy yogurt, and aromatic spices for the perfect sweet, spicy, and savory bite.",
+    },
+    {
+      Image: Chicken,
+      title: "🍛 Butter Chicken",
+      Description:
+        "Tender chicken simmered in a rich, creamy tomato gravy, delicately spiced and finished with butter for a classic North Indian favorite.",
+    },
+  ];
   return (
     <>
       <section className="relative flex h-fit w-full items-center justify-center">
@@ -22,12 +43,12 @@ function MenuSection() {
           </div>
           <div className="flex h-full w-full flex-col">
             <div className="flex w-full flex-col gap-4 px-4 sm:flex-row sm:flex-wrap md:px-16 lg:flex-nowrap">
-              {[Kebab, Chat, Chicken].map((ima, index) => (
-                <img
-                  src={ima}
+              {foods.map((ima, index) => (
+                <ImageCard
+                  ima={ima.Image}
+                  title={ima.title}
+                  desciption={ima.Description}
                   key={index}
-                  alt="welcome"
-                  className="aspect-4/5 h-auto w-full min-w-0 rounded-2xl object-cover lg:w-0 lg:flex-1"
                 />
               ))}
             </div>
@@ -52,3 +73,31 @@ function MenuSection() {
 }
 
 export default MenuSection;
+
+function ImageCard({
+  ima,
+  title,
+  desciption,
+}: {
+  ima: string;
+  title: string;
+  desciption: string;
+}) {
+  return (
+    <>
+      <div className="group aspect-4/5 h-auto w-full [perspective:1000px]">
+        <motion.div className="relative h-full w-full transition-transform duration-500 transform-3d group-hover:rotate-y-180">
+          <motion.img
+            src={ima}
+            alt="welcome"
+            className="absolute inset-0 h-full w-full rounded-2xl object-cover backface-hidden"
+          />
+          <motion.div className="bg-card-100 absolute inset-0 flex rotate-y-180 flex-col items-center justify-center gap-4 rounded-2xl p-15 backface-hidden">
+            <span className="text-texts-100 text-2xl">{title}</span>
+            <p className="text-texts-200 text-[1rem]">{desciption}</p>
+          </motion.div>
+        </motion.div>
+      </div>
+    </>
+  );
+}
