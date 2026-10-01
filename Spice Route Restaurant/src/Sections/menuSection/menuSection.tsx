@@ -85,7 +85,7 @@ function ImageCard({
 }) {
   return (
     <>
-      <div className="group aspect-4/5 h-auto w-full [perspective:1000px]">
+      <div className="group aspect-4/5 h-auto w-full perspective-[1000px]">
         <motion.div className="relative h-full w-full transition-transform duration-500 transform-3d group-hover:rotate-y-180">
           <motion.img
             src={ima}
