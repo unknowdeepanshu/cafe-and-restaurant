@@ -7,10 +7,10 @@
   font-style: normal;
 }
 
-.fanwood-text-regular-italic {
+#fanwood-text-regular {
   font-family: "Fanwood Text", serif;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
 }
 
 * {

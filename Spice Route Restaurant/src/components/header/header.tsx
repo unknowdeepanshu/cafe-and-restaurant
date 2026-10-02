@@ -5,12 +5,12 @@ import { useState } from "react";
 function Header() {
   const [open, setOpen] = useState(false);
   const NavMenu = [
-    "Home",
-    "Menu",
-    "About",
-    "Gallery",
-    "Private Events",
-    "Contact",
+    { navName: "Home", navLink: "/" },
+    { navName: "Menu", navLink: "/menu " },
+    { navName: "About", navLink: "/about" },
+    { navName: "Gallery", navLink: "/gallery" },
+    { navName: "Private Events", navLink: "/privateevents" },
+    { navName: "Contact", navLink: "/contact" },
   ];
 
   return (
@@ -30,9 +30,9 @@ function Header() {
                 <li key={index}>
                   <a
                     className="text-texts-200 hover:text-texts-100 mx-2 text-[15px] transition-all duration-100 md:mx-5 lg:text-[1.125rem]"
-                    href={`#${Nav}`}
+                    href={`${Nav.navLink}`}
                   >
-                    {Nav}
+                    {Nav.navName}
                   </a>
                 </li>
               ))}
@@ -68,9 +68,9 @@ function Header() {
                     <li key={index}>
                       <a
                         className="text-texts-200 hover:text-texts-100 mx-2 text-[1.125rem] transition-all duration-100"
-                        href={`#${Nav}`}
+                        href={`${Nav.navLink}`}
                       >
-                        {Nav}
+                        {Nav.navName}
                       </a>
                     </li>
                   ))}

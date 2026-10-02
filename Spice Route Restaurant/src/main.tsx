@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./Layout.tsx";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import { Home } from "@/pages";
+import { Home, Menu } from "@/pages";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <Home />,
+      },
+      {
+        path: "/menu",
+        element: <Menu />,
       },
     ],
   },
