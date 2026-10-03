@@ -2,6 +2,11 @@ import BookingTable from "@/assets/bookingTable.png";
 import { cn } from "@/lib/utils";
 import RestaurantButton from "@/ui/button/button";
 import {
+  InputBox,
+  type Field,
+  type BookingValues,
+} from "@/ui/Inputbox/Inputbox";
+import {
   IconUser,
   IconPhoneCall,
   IconMail,
@@ -10,17 +15,7 @@ import {
   IconClock,
   IconMessageCircle,
 } from "@tabler/icons-react";
-import { useState, type ReactNode, type FormEvent } from "react";
-
-type BookingValues = {
-  name: string;
-  phone: string;
-  email: string;
-  guests: string;
-  date: string;
-  time: string;
-  message: string;
-};
+import { useState, type FormEvent } from "react";
 
 const initialValues: BookingValues = {
   name: "",
@@ -30,75 +25,8 @@ const initialValues: BookingValues = {
   date: "",
   time: "",
   message: "",
+  catering: "",
 };
-
-type Field = {
-  name: keyof BookingValues;
-  label: string;
-  type?: "text" | "tel" | "email" | "number" | "date" | "time";
-  icon: ReactNode;
-  placeholder?: string;
-  min?: number;
-  max?: number;
-  input: "input" | "textarea";
-};
-
-const formFields: Field[] = [
-  {
-    name: "name",
-    label: "Your name",
-    type: "text",
-    icon: <IconUser />,
-    placeholder: "John Doe",
-    input: "input",
-  },
-  {
-    name: "phone",
-    label: "Phone number",
-    type: "tel",
-    icon: <IconPhoneCall />,
-    placeholder: "+971 50 123 4567",
-    input: "input",
-  },
-  {
-    name: "email",
-    label: "Email address",
-    type: "email",
-    icon: <IconMail />,
-    placeholder: "you@example.com",
-    input: "input",
-  },
-  {
-    name: "guests",
-    label: "Number of guests",
-    type: "number",
-    icon: <IconUsers />,
-    min: 1,
-    max: 20,
-    input: "input",
-  },
-  {
-    name: "date",
-    label: "Reservation date",
-    type: "date",
-    icon: <IconCalendarMonth />,
-    input: "input",
-  },
-  {
-    name: "time",
-    label: "Reservation time",
-    type: "time",
-    icon: <IconClock />,
-    input: "input",
-  },
-  {
-    name: "message",
-    label: "Special requests",
-    icon: <IconMessageCircle />,
-    placeholder: "Any dietary requirements or special requests?",
-    input: "textarea",
-  },
-];
 
 function BookingSection() {
   const [values, setValues] = useState<BookingValues>(initialValues);
@@ -179,83 +107,61 @@ function BookingSection() {
     </section>
   );
 }
-
-interface InputBoxProps {
-  label: string;
-  type?: Field["type"];
-  icon?: ReactNode;
-  value: string;
-  placeholder?: string;
-  min?: number;
-  max?: number;
-  required?: boolean;
-  onChange: (value: string) => void;
-  input?: "input" | "textarea";
-}
-
-function InputBox({
-  label,
-  type = "text",
-  icon,
-  value,
-  placeholder,
-  min,
-  max,
-  required = false,
-  onChange,
-  input = "input",
-}: InputBoxProps) {
-  const id = `booking-${label.toLowerCase().replace(/\s+/g, "-")}`;
-
-  return (
-    <div className="flex min-w-0 flex-col gap-2">
-      <label htmlFor={id} className="text-texts-200 text-sm font-medium">
-        {label}
-      </label>
-
-      <div
-        className={cn(
-          "border-line-200 focus-within:border-texts-300 focus-within:ring-texts-300/20 relative flex min-w-0 gap-2 rounded-lg border px-3 py-3 transition-colors focus-within:ring-2",
-          input === "textarea" ? "items-start" : "items-center",
-        )}
-      >
-        {icon && (
-          <span
-            className={cn(
-              "text-texts-200 shrink-0 [&>svg]:h-5 [&>svg]:w-5",
-              input === "textarea" && "pt-0.5",
-            )}
-          >
-            {icon}
-          </span>
-        )}
-
-        {input === "input" ? (
-          <input
-            id={id}
-            type={type}
-            value={value}
-            placeholder={placeholder}
-            min={min}
-            max={max}
-            required={required}
-            onChange={(e) => onChange(e.target.value)}
-            className="text-texts-200 placeholder:text-texts-200/50 w-full min-w-0 bg-transparent text-sm scheme-dark outline-none sm:text-base"
-          />
-        ) : (
-          <textarea
-            id={id}
-            value={value}
-            placeholder={placeholder}
-            required={required}
-            onChange={(e) => onChange(e.target.value)}
-            rows={5}
-            className="text-texts-200 placeholder:text-texts-200/50 w-full min-w-0 resize-y bg-transparent text-sm outline-none sm:text-base"
-          />
-        )}
-      </div>
-    </div>
-  );
-}
+const formFields: Field[] = [
+  {
+    name: "name",
+    label: "Your name",
+    type: "text",
+    icon: <IconUser />,
+    placeholder: "John Doe",
+    input: "input",
+  },
+  {
+    name: "phone",
+    label: "Phone number",
+    type: "tel",
+    icon: <IconPhoneCall />,
+    placeholder: "+971 50 123 4567",
+    input: "input",
+  },
+  {
+    name: "email",
+    label: "Email address",
+    type: "email",
+    icon: <IconMail />,
+    placeholder: "you@example.com",
+    input: "input",
+  },
+  {
+    name: "guests",
+    label: "Number of guests",
+    type: "number",
+    icon: <IconUsers />,
+    min: 1,
+    max: 20,
+    input: "input",
+  },
+  {
+    name: "date",
+    label: "Reservation date",
+    type: "date",
+    icon: <IconCalendarMonth />,
+    input: "input",
+  },
+  {
+    name: "time",
+    label: "Reservation time",
+    type: "time",
+    icon: <IconClock />,
+    input: "input",
+  },
+  {
+    name: "message",
+    label: "Special requests",
+    icon: <IconMessageCircle />,
+    placeholder: "Any dietary requirements or special requests?",
+    input: "textarea",
+  },
+];
 
 export default BookingSection;

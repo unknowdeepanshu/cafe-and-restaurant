@@ -4,6 +4,7 @@ import Chat from "@/assets/menuThree/Samosa Chaat.jpg";
 import Chicken from "@/assets/menuThree/Butter chicken.jpg";
 import RestaurantButton from "@/ui/button/button";
 import { motion } from "motion/react";
+import { NavLink } from "react-router";
 
 function MenuSection() {
   const foods = [
@@ -54,7 +55,12 @@ function MenuSection() {
             </div>
           </div>
           <div className="flex h-full w-full items-center justify-center">
-            <RestaurantButton>Explore Menu</RestaurantButton>
+            <NavLink
+              className="border-button-100 text-texts-200 bg-button-100 lg:text-texts-200 lg:hover:bg-button-100 rounded-md border-4 px-7 py-3 font-semibold shadow-[0_0_18px_rgba(201,164,92,0.25)] transition-all duration-300 md:text-[#0D0A08] lg:bg-transparent lg:shadow-none lg:hover:text-[#0D0A08] lg:hover:shadow-[0_0_18px_rgba(201,164,92,0.25)]"
+              to="/menu"
+            >
+              Explore Menu
+            </NavLink>
           </div>
         </div>
         <img
