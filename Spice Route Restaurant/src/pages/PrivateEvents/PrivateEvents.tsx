@@ -92,7 +92,7 @@ function PrivateEvents() {
           <div className="absolute top-0 -z-20 flex h-full w-full items-center bg-black opacity-60"></div>
           <div className="flex h-full w-full items-center px-4 md:px-16">
             <div className="text-texts-200 text-3xl">
-              <div className="bg-line-400 flex h-fit w-full flex-col justify-center rounded-3xl p-12 opacity-100 sm:p-20 md:h-[19.375rem] md:w-[40.25rem]">
+              <div className="bg-line-400 flex h-fit w-full flex-col justify-center rounded-3xl p-12 opacity-100 sm:p-20 md:h-77.5 md:w-161">
                 <h1
                   id="restaurantNames"
                   className="text-texts-100 text-4xl md:text-[3.875rem]"
