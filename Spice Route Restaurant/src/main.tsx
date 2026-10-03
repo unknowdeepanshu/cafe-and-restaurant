@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./Layout.tsx";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import { Home, Menu } from "@/pages";
+import { Home, Menu, PrivateEvents } from "@/pages";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +18,11 @@ const router = createBrowserRouter([
       {
         path: "/menu",
         element: <Menu />,
+      },
+
+      {
+        path: "/privateevents",
+        element: <PrivateEvents />,
       },
     ],
   },
