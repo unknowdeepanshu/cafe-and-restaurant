@@ -2,31 +2,34 @@ import { useState, useEffect } from "react";
 
 export function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false);
-  const [isTablet, setIsTablet] = useState(false);
-
+  const [isMaxTablet, setIsMaxTablet] = useState(false);
+  const [isMinTablet, setIsMinTablet] = useState(false);
   const [isDesktop, setIsDisDesktop] = useState(false);
 
   useEffect(() => {
     const mobileQuery = window.matchMedia("(max-width: 425px)");
-    const tabletQuery = window.matchMedia("(max-width: 768px)");
+    const tabletMaxQuery = window.matchMedia("(max-width: 768px)");
+    const tabletMinQuery = window.matchMedia("(min-width: 768px)");
     const desktopQuery = window.matchMedia("(min-width: 1024px)");
     const handleChange = () => {
       setIsMobile(mobileQuery.matches);
-      setIsTablet(tabletQuery.matches);
+      setIsMaxTablet(tabletMaxQuery.matches);
       setIsDisDesktop(desktopQuery.matches);
+      setIsMinTablet(tabletMinQuery.matches);
     };
 
     handleChange();
     mobileQuery.addEventListener("change", handleChange);
-    tabletQuery.addEventListener("change", handleChange);
+    tabletMaxQuery.addEventListener("change", handleChange);
     desktopQuery.addEventListener("change", handleChange);
-
+    tabletMinQuery.addEventListener("change", handleChange);
     return () => {
       mobileQuery.removeEventListener("change", handleChange);
-      tabletQuery.removeEventListener("change", handleChange);
+      tabletMaxQuery.removeEventListener("change", handleChange);
       desktopQuery.removeEventListener("change", handleChange);
+      tabletMinQuery.addEventListener("change", handleChange);
     };
   }, []);
 
-  return { isMobile, isTablet, isDesktop };
+  return { isMobile, isMaxTablet, isDesktop, isMinTablet };
 }

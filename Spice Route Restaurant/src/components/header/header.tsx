@@ -1,9 +1,11 @@
+import { useIsMobile } from "@/hook/matchMedia";
 import RestaurantButton from "@/ui/button/button";
 import { IconMenu2 } from "@tabler/icons-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Header() {
   const [open, setOpen] = useState(false);
+  const { isMinTablet } = useIsMobile();
   const NavMenu = [
     { navName: "Home", navLink: "/" },
     { navName: "Menu", navLink: "/menu " },
@@ -12,7 +14,11 @@ function Header() {
     { navName: "Private Events", navLink: "/privateevents" },
     { navName: "Contact", navLink: "/contact" },
   ];
-
+  useEffect(() => {
+    if (isMinTablet) {
+      setOpen(false);
+    }
+  }, [isMinTablet]);
   return (
     <>
       <header>
