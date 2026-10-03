@@ -1,14 +1,16 @@
 import { useIsMobile } from "@/hook/matchMedia";
+import { cn } from "@/lib/utils";
 import RestaurantButton from "@/ui/button/button";
 import { IconMenu2 } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router";
 
 function Header() {
   const [open, setOpen] = useState(false);
   const { isMinTablet } = useIsMobile();
   const NavMenu = [
     { navName: "Home", navLink: "/" },
-    { navName: "Menu", navLink: "/menu " },
+    { navName: "Menu", navLink: "/menu" },
     { navName: "About", navLink: "/about" },
     { navName: "Gallery", navLink: "/gallery" },
     { navName: "Private Events", navLink: "/privateevents" },
@@ -34,12 +36,17 @@ function Header() {
             <ul className="flex items-center">
               {NavMenu.map((Nav, index) => (
                 <li key={index}>
-                  <a
-                    className="text-texts-200 hover:text-texts-100 mx-2 text-[15px] transition-all duration-100 md:mx-5 lg:text-[1.125rem]"
-                    href={`${Nav.navLink}`}
+                  <NavLink
+                    className={({ isActive }) =>
+                      cn(
+                        "text-texts-200 hover:text-texts-100 mx-2 text-[15px] transition-all duration-100 md:mx-5 lg:text-[1.125rem]",
+                        isActive ? "text-texts-100" : "text-texts-200",
+                      )
+                    }
+                    to={`${Nav.navLink}`}
                   >
                     {Nav.navName}
-                  </a>
+                  </NavLink>
                 </li>
               ))}
             </ul>
@@ -72,12 +79,17 @@ function Header() {
                 <ul className="flex flex-col gap-10">
                   {NavMenu.map((Nav, index) => (
                     <li key={index}>
-                      <a
-                        className="text-texts-200 hover:text-texts-100 mx-2 text-[1.125rem] transition-all duration-100"
-                        href={`${Nav.navLink}`}
+                      <NavLink
+                        className={({ isActive }) =>
+                          cn(
+                            "text-texts-200 hover:text-texts-100 mx-2 text-[15px] transition-all duration-100 md:mx-5 lg:text-[1.125rem]",
+                            isActive ? "text-texts-100" : "text-texts-200",
+                          )
+                        }
+                        to={`${Nav.navLink}`}
                       >
                         {Nav.navName}
-                      </a>
+                      </NavLink>
                     </li>
                   ))}
                 </ul>
