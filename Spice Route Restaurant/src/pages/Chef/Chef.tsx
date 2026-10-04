@@ -16,6 +16,8 @@ import {
   IconBrandYoutube,
   IconPlus,
 } from "@tabler/icons-react";
+import { useIsMobile } from "@/hook/matchMedia";
+
 const scoliadMedia = [
   <IconBrandFacebook color="#ffffff" />,
   <IconBrandInstagram color="#ffffff" />,
@@ -52,31 +54,69 @@ function Chef() {
       ChefName: "Vikram Sethi",
     },
   ];
+  const { isLargeDesktop } = useIsMobile();
   return (
     <>
       <section>
         <HeaderTitle img={Ketchen} Title="Our Chefs" />
         <div className="flex h-fit w-full flex-wrap justify-between gap-5 px-4 py-10 md:px-16">
-          <div className="flex h-fit w-full flex-wrap justify-center gap-4 md:justify-between">
-            {chefList.map((chef, index) => (
-              <Chefcard
-                key={index}
-                img={chef.ChefImg}
-                ChefPosition={chef.Chefposition}
-                ChefName={chef.ChefName}
-              />
-            ))}
+          <div className="h-fit w-full items-center justify-center">
+            <h1
+              id="Header"
+              className="text-texts-200 text-center text-4xl sm:text-6xl md:text-7xl"
+            >
+              Meet Our{" "}
+              <span id="restaurantNames" className="text-texts-300">
+                Chefs
+              </span>
+            </h1>
           </div>
-          <div className="flex h-fit w-full flex-wrap justify-center gap-4 md:justify-around">
-            {Chefs.map((chef, index) => (
-              <Chefcard
-                key={index}
-                img={chef.ChefImg}
-                ChefPosition={chef.Chefposition}
-                ChefName={chef.ChefName}
-              />
-            ))}
-          </div>
+
+          {isLargeDesktop ? (
+            <>
+              <div className="flex h-fit w-full flex-wrap justify-center gap-4 md:justify-between">
+                {chefList.map((chef, index) => (
+                  <Chefcard
+                    key={index}
+                    img={chef.ChefImg}
+                    ChefPosition={chef.Chefposition}
+                    ChefName={chef.ChefName}
+                  />
+                ))}
+              </div>
+              <div className="flex h-fit w-full flex-wrap justify-center gap-4 md:justify-around">
+                {Chefs.map((chef, index) => (
+                  <Chefcard
+                    key={index}
+                    img={chef.ChefImg}
+                    ChefPosition={chef.Chefposition}
+                    ChefName={chef.ChefName}
+                  />
+                ))}
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="flex h-fit w-full flex-wrap justify-center gap-4 md:justify-center lg:justify-between">
+                {chefList.map((chef, index) => (
+                  <Chefcard
+                    key={index}
+                    img={chef.ChefImg}
+                    ChefPosition={chef.Chefposition}
+                    ChefName={chef.ChefName}
+                  />
+                ))}
+                {Chefs.map((chef, index) => (
+                  <Chefcard
+                    key={index}
+                    img={chef.ChefImg}
+                    ChefPosition={chef.Chefposition}
+                    ChefName={chef.ChefName}
+                  />
+                ))}
+              </div>
+            </>
+          )}
         </div>
       </section>
     </>
