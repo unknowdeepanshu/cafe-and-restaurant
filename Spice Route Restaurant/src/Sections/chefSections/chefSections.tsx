@@ -9,13 +9,13 @@ import { ChefCard, ChefCardMobile } from "@/components/ChefCard/ChefCard";
 import { useIsMobile } from "@/hook/matchMedia";
 
 function ChefSections() {
-  const { isMobile, isTablet } = useIsMobile();
+  const { isMobile, isMaxTablet } = useIsMobile();
   return (
     <>
       <section className="h-fit">
         {isMobile ? (
           <MobileViewChef />
-        ) : isTablet ? (
+        ) : isMaxTablet ? (
           <TabletViewChef />
         ) : (
           <DesktopViewChef />
