@@ -39,6 +39,8 @@ function Chef() {
       Chefposition: "Tandoor Chef",
       ChefName: "Rohan Malhotra",
     },
+  ];
+  const Chefs = [
     {
       ChefImg: CurryChefs,
       Chefposition: "Curry Chef",
@@ -54,9 +56,19 @@ function Chef() {
     <>
       <section>
         <HeaderTitle img={Ketchen} Title="Our Chefs" />
-        <div className="flex h-fit px-4 py-10 md:px-16">
-          <div className="flex gap-4">
+        <div className="flex h-fit w-full flex-wrap justify-between gap-5 px-4 py-10 md:px-16">
+          <div className="flex h-fit w-full flex-wrap justify-center gap-4 md:justify-between">
             {chefList.map((chef, index) => (
+              <Chefcard
+                key={index}
+                img={chef.ChefImg}
+                ChefPosition={chef.Chefposition}
+                ChefName={chef.ChefName}
+              />
+            ))}
+          </div>
+          <div className="flex h-fit w-full flex-wrap justify-center gap-4 md:justify-around">
+            {Chefs.map((chef, index) => (
               <Chefcard
                 key={index}
                 img={chef.ChefImg}
@@ -82,7 +94,7 @@ interface ChefcardPropd {
 function Chefcard({ img, ChefPosition, ChefName }: ChefcardPropd) {
   return (
     <>
-      <div className="flex h-fit w-full">
+      <div className="flex h-fit w-fit">
         <div className="bg-card-100 flex h-fit w-fit flex-col gap-4 rounded-3xl p-4">
           <img
             src={img}
