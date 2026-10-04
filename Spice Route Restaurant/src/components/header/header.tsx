@@ -11,7 +11,7 @@ function Header() {
   const NavMenu = [
     { navName: "Home", navLink: "/" },
     { navName: "Menu", navLink: "/menu" },
-    { navName: "About", navLink: "/about" },
+    { navName: "About the Chef", navLink: "/aboutthechef" },
     { navName: "Gallery", navLink: "/gallery" },
     { navName: "Private Events", navLink: "/privateevents" },
     { navName: "Contact", navLink: "/contact" },
