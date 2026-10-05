@@ -67,7 +67,7 @@ function ReviweCard({
           />
           <div className="flex flex-col items-center gap-4">
             <div className="flex gap-2">
-              {[" ", " ", " ", " ", " "].map((ran, index) => (
+              {[" ", " ", " ", " ", " "].map((_, index) => (
                 <IconStarFilled key={index} color="#C28900" />
               ))}
             </div>
@@ -132,7 +132,7 @@ function MobileReviweCard({
           />
           <div className="flex flex-col items-center gap-4">
             <div className="flex gap-2">
-              {[" ", " ", " ", " ", " "].map((ran, index) => (
+              {[" ", " ", " ", " ", " "].map((_, index) => (
                 <IconStarFilled key={index} color="#C28900" />
               ))}
             </div>

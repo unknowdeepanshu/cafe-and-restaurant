@@ -10,7 +10,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { useState, useRef, useEffect } from "react";
 
 function ReviewSections() {
-  const { isTablet } = useIsMobile();
+  const { isMaxTablet } = useIsMobile();
   return (
     <>
       <section className="relative h-screen w-full overflow-hidden">
@@ -36,7 +36,7 @@ function ReviewSections() {
             </h1>
           </div>
         </div>
-        {isTablet ? <MobileCards /> : <DesktopCards />}
+        {isMaxTablet ? <MobileCards /> : <DesktopCards />}
       </section>
     </>
   );

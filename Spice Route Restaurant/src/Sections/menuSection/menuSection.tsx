@@ -2,7 +2,6 @@ import decortion from "@/assets/decoration/decoration.png";
 import Kebab from "@/assets/menuThree/Lamb Seekh Kebab.jpg";
 import Chat from "@/assets/menuThree/Samosa Chaat.jpg";
 import Chicken from "@/assets/menuThree/Butter chicken.jpg";
-import RestaurantButton from "@/ui/button/button";
 import { motion } from "motion/react";
 import { NavLink } from "react-router";
 
