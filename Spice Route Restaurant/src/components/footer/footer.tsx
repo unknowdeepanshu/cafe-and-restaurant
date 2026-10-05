@@ -18,7 +18,15 @@ function Footer() {
     <>
       <footer className="flex h-[70vh]">
         <div className="flex h-full w-full flex-col-reverse md:flex-row">
-          <div className="h-full w-full bg-amber-100 md:w-1/2"></div>
+          <div className="h-full w-full bg-amber-100 md:w-1/2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115564.36554137763!2d55.136126015691204!3d25.156426800723526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6948e247f935%3A0x2b84943d94948616!2sTIMELESS!5e0!3m2!1sen!2sin!4v1791206172559!5m2!1sen!2sin"
+              className="h-full w-full"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
           <div className="relative flex h-full w-full flex-col md:w-1/2">
             <img
               src={FooterImage}
