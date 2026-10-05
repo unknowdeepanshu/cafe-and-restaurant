@@ -10,10 +10,10 @@ function OpeningCard({ className }: OpeningCardProps) {
   return (
     <>
       <div
-        className={
-          (cn("flex h-1/2 w-full flex-col items-center p-4 md:h-full md:w-1/2"),
-          className)
-        }
+        className={cn(
+          "flex h-1/2 w-full flex-col items-center p-4 md:h-full md:w-1/2",
+          className,
+        )}
       >
         <img
           src={designLine}
@@ -21,7 +21,7 @@ function OpeningCard({ className }: OpeningCardProps) {
           className="h-20 w-full shrink-0 opacity-70"
         />
 
-        <div className="relative flex min-h-0 w-full flex-1 flex-col items-center justify-center gap-5 overflow-hidden">
+        <div className="relative flex min-h-0 w-full flex-1 flex-col items-center justify-center gap-5 overflow-hidden p-10">
           <img
             src={backLines}
             alt="backLines"
