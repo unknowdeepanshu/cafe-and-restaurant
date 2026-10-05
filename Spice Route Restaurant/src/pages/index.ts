@@ -1,7 +1,7 @@
 import Chef from "./Chef/Chef";
 import Contact from "./Contact/Contact";
 import Gallery from "./Gallery/Gallery";
-import Home from "./Home/home";
+import Home from "./home/home";
 import Menu from "./Menu/menu";
 import PrivateEvents from "./PrivateEvents/PrivateEvents";
 
