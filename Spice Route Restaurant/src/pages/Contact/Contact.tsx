@@ -84,7 +84,7 @@ function Contact() {
     <>
       <section>
         <HeaderTitle img={MenuHeader} Title="Contact Us" />
-        <div className="flex h-fit w-full flex-col justify-between gap-5 px-4 py-10 md:flex-row md:px-16">
+        <div className="flex h-fit w-full flex-col items-stretch justify-between gap-5 px-4 py-10 md:flex-row md:px-16">
           <div className="flex h-fit w-full flex-col gap-4 md:w-1/2">
             <div className="flex h-fit w-full flex-col">
               <div>
@@ -157,8 +157,8 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div className="flex h-full w-full flex-col items-center justify-center md:w-1/2">
-            <OpeningCard className="md:w-full" />
+          <div className="flex w-full flex-col items-center justify-center self-stretch md:w-1/2">
+            <OpeningCard className="h-full md:w-full" />
           </div>
         </div>
       </section>
