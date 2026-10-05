@@ -1,7 +1,7 @@
 import Chef from "./Chef/Chef";
 import Contact from "./Contact/Contact";
 import Gallery from "./Gallery/Gallery";
-import Home from "./Home/Home.tsx";
+import Home from "@/pages/Home/Home";
 import Menu from "./Menu/menu";
 import PrivateEvents from "./PrivateEvents/PrivateEvents";
 
