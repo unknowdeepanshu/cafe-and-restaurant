@@ -66,11 +66,15 @@ function MenuSection() {
           src={decortion}
           alt="decortion"
           className="absolute top-0 right-0 -z-1 opacity-18"
+          loading="lazy"
+          decoding="async"
         />
         <img
           src={decortion}
           alt="decortion"
           className="absolute bottom-0 left-0 -z-1 rotate-180 opacity-18"
+          loading="lazy"
+          decoding="async"
         />
       </section>
     </>
@@ -96,6 +100,8 @@ function ImageCard({
             src={ima}
             alt="welcome"
             className="absolute inset-0 h-full w-full rounded-2xl object-cover backface-hidden"
+            loading="lazy"
+            decoding="async"
           />
           <motion.div className="bg-card-100 absolute inset-0 flex rotate-y-180 flex-col items-center justify-center gap-4 rounded-2xl p-15 backface-hidden">
             <span className="text-texts-100 text-2xl">{title}</span>

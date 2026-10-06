@@ -30,18 +30,28 @@ function WelcomeSections() {
             </div>
           </div>
           <div className="w-full md:w-1/2">
-            <img src={welcome} alt="welcome" className="h-full w-full" />
+            <img
+              src={welcome}
+              alt="welcome"
+              className="h-full w-full"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
         <img
           src={decortion}
           alt="decortion"
           className="absolute top-0 right-0 -z-1 opacity-18"
+          loading="lazy"
+          decoding="async"
         />
         <img
           src={decortion}
           alt="decortion"
           className="absolute bottom-0 left-0 -z-1 rotate-180 opacity-18"
+          loading="lazy"
+          decoding="async"
         />
       </section>
     </>

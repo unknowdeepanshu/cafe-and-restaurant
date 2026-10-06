@@ -19,6 +19,8 @@ function ReviewSections() {
             src={fork}
             alt="fork"
             className="absolute top-0 left-0 h-[22.679rem] w-[22.679rem]"
+            loading="lazy"
+            decoding="async"
           />{" "}
           <div className="flex w-fit flex-col items-center justify-center">
             <p id="Header" className="text-texts-200 text-[1rem] sm:text-2xl">

@@ -208,8 +208,10 @@ function FoodsCard({
       >
         <img
           src={FoodImage}
-          alt="MuttonKormas"
+          alt={`${Title}`}
           className="h-[18.063rem] w-full object-fill hover:opacity-55"
+          loading="lazy"
+          decoding="async"
         />
         <div className="flex h-fit w-full flex-col gap-3 p-6">
           <div className="flex h-fit w-full justify-between">

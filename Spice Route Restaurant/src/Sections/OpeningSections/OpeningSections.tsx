@@ -7,7 +7,13 @@ function OpeningSections() {
       <section className="h-[200vh] md:h-screen">
         <div className="flex h-full w-full flex-col md:flex-row">
           <div className="h-1/2 w-full md:h-full md:w-1/2">
-            <img src={Time} alt="Time" className="h-full w-full object-fill" />
+            <img
+              src={Time}
+              alt="Time"
+              className="h-full w-full object-fill"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <OpeningCard />
         </div>

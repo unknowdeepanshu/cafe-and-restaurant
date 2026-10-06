@@ -101,6 +101,8 @@ function BookingSection() {
             src={BookingTable}
             alt="A beautifully prepared restaurant table"
             className="h-full w-full object-cover"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </div>

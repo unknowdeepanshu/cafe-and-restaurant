@@ -31,6 +31,8 @@ function Footer() {
             <img
               src={FooterImage}
               alt="FooterImage"
+              loading="lazy"
+              decoding="async"
               className="absolute -z-10 h-full w-full opacity-30"
             />
             <div className="flex h-full w-full flex-col items-center justify-center gap-4">

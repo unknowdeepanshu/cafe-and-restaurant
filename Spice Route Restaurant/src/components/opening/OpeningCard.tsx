@@ -19,6 +19,8 @@ function OpeningCard({ className }: OpeningCardProps) {
           src={designLine}
           alt="designLine"
           className="h-20 w-full shrink-0 opacity-70"
+          loading="lazy"
+          decoding="async"
         />
 
         <div className="relative flex min-h-0 w-full flex-1 flex-col items-center justify-center gap-5 overflow-hidden p-10">
@@ -61,6 +63,8 @@ function OpeningCard({ className }: OpeningCardProps) {
         <img
           src={designLine}
           alt="designLine"
+          loading="lazy"
+          decoding="async"
           className="h-20 w-full shrink-0 rotate-180 opacity-70"
         />
       </div>

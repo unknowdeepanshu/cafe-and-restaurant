@@ -13,7 +13,12 @@ function ChefCard({ Chef }: ChefCard) {
     <>
       <div className="flex h-fit w-full gap-2 pt-28">
         <div className="border-line-100 relative flex h-fit w-1/2 flex-col items-center justify-center border-b-4">
-          <img src={Chef.ChefImg} alt="CurryChef" />
+          <img
+            src={Chef.ChefImg}
+            alt="CurryChef"
+            loading="lazy"
+            decoding="async"
+          />
           <PositionChef className="absolute -bottom-5">
             {Chef.position}
           </PositionChef>
@@ -35,7 +40,12 @@ function ChefCardMobile({ Chef }: ChefCard) {
     <>
       <div className="flex h-fit w-full pt-28">
         <div className="border-line-100 relative flex h-fit w-full flex-col items-center justify-center gap-3 border-b-4">
-          <img src={Chef.ChefImg} alt="CurryChef" />
+          <img
+            src={Chef.ChefImg}
+            alt="CurryChef"
+            loading="lazy"
+            decoding="async"
+          />
           <div className="flex w-full flex-col items-center justify-center gap-3 text-center">
             <div className="flex h-fit w-fit flex-col items-center justify-center gap-3">
               <h1 className="text-texts-100 md:text-2xl">{Chef.ChefName}</h1>{" "}

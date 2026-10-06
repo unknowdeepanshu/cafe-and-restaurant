@@ -64,6 +64,8 @@ function ReviweCard({
             src={img}
             alt="face"
             className="absolute top-[-12%] h-28 w-28 rounded-[50%]"
+            loading="lazy"
+            decoding="async"
           />
           <div className="flex flex-col items-center gap-4">
             <div className="flex gap-2">
@@ -129,6 +131,8 @@ function MobileReviweCard({
             src={img}
             alt="face"
             className="absolute top-[-12%] h-28 w-28 rounded-[50%]"
+            loading="lazy"
+            decoding="async"
           />
           <div className="flex flex-col items-center gap-4">
             <div className="flex gap-2">

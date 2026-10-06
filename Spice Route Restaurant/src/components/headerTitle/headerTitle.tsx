@@ -10,6 +10,9 @@ function HeaderTitle({ img, Title }: HeaderTitleProps) {
           src={img}
           alt="MenuHeader"
           className="absolute top-0 -z-2 h-full w-full"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute top-0 -z-1 h-full w-full bg-black opacity-60" />
         <div className="relative flex h-1/2 w-1/2 items-center justify-center">

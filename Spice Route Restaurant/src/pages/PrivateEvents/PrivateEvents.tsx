@@ -88,6 +88,9 @@ function PrivateEvents() {
             src={Event}
             alt="Event"
             className="absolute -z-30 h-full w-full"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
           />
           <div className="absolute top-0 -z-20 flex h-full w-full items-center bg-black opacity-60"></div>
           <div className="flex h-full w-full items-center px-4 md:px-16">
