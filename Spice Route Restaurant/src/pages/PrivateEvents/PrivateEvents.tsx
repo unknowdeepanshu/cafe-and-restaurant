@@ -1,4 +1,4 @@
-import Event from "@/assets/event.png";
+import Event from "@/assets/event.webp";
 import { useState } from "react";
 import { InputBox, type Field } from "@/ui/Inputbox/Inputbox";
 

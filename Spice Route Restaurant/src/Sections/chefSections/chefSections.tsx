@@ -73,7 +73,7 @@ function DesktopViewChef() {
           <div className="flex w-full lg:h-[31.688rem]">
             <h1
               id="Header"
-              className="text-texts-300 w-1/2 text-[6.813rem] leading-[8.125rem] lg:text-[13.063rem] lg:leading-[10.125rem]"
+              className="text-texts-300 w-1/2 text-[6.813rem] leading-32.5 lg:text-[13.063rem] lg:leading-40.5"
             >
               Meet The Chef
             </h1>

@@ -1,6 +1,6 @@
-import ExecutiveChefs from "./Executive Chef.png";
-import HeadChefs from "./HeadChef.png";
-import TandoorChefs from "./TandoorChef.png";
-import CurryChefs from "./CurryChef.png";
-import DesserChefs from "./DessertChef.png";
+import ExecutiveChefs from "./Executive Chef.webp";
+import HeadChefs from "./HeadChef.webp";
+import TandoorChefs from "./TandoorChef.webp";
+import CurryChefs from "./CurryChef.webp";
+import DesserChefs from "./DessertChef.webp";
 export { ExecutiveChefs, HeadChefs, TandoorChefs, CurryChefs, DesserChefs };

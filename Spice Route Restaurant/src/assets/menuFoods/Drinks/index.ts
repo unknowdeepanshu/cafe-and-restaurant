@@ -1,7 +1,7 @@
-import FreshLimeSoda from "./Fresh Lime Soda.jpg";
-import KesarBadamMilk from "./Kesar Badam Milk.jpg";
-import MangoLassi from "./Mango Lassi.jpg";
-import MasalaChai from "./Masala Chai.jpg";
-import SweetLassi from "./Sweet Lassi.jpg";
+import FreshLimeSoda from "./Fresh Lime Soda.webp";
+import KesarBadamMilk from "./Kesar Badam Milk.webp";
+import MangoLassi from "./Mango Lassi.webp";
+import MasalaChai from "./Masala Chai.webp";
+import SweetLassi from "./Sweet Lassi.webp";
 
 export { FreshLimeSoda, KesarBadamMilk, MangoLassi, MasalaChai, SweetLassi };

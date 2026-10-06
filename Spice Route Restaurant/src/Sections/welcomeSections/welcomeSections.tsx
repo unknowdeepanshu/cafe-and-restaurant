@@ -1,5 +1,5 @@
-import decortion from "@/assets/decoration/decoration.png";
-import welcome from "@/assets/welcome-2 1.png";
+import decortion from "@/assets/decoration/decoration.webp";
+import welcome from "@/assets/welcome-2 1.webp";
 function WelcomeSections() {
   return (
     <>

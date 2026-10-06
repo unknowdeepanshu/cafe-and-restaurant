@@ -1,4 +1,4 @@
-import Time from "@/assets/timing.jpg";
+import Time from "@/assets/timing.webp";
 import { OpeningCard } from "@/components/opening/OpeningCard";
 
 function OpeningSections() {

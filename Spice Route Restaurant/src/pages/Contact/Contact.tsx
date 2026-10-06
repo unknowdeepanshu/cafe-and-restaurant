@@ -1,5 +1,5 @@
 import HeaderTitle from "@/components/headerTitle/headerTitle";
-import MenuHeader from "@/assets/HeaderImages/MenuHeader.png";
+import MenuHeader from "@/assets/HeaderImages/MenuHeader.webp";
 import { OpeningCard } from "@/components/opening/OpeningCard";
 import { IconDeviceMobile, IconMapPin, IconMail } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";

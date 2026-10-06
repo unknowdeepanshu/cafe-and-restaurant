@@ -1,8 +1,8 @@
-import ChickenSeekhKebab from "./Chicken Seekh Kebab.jpg";
-import DahiKeKebab from "./Dahi Ke Kebab.jpg";
-import GaloutiKebab from "./Galouti Kebab.jpg";
-import PaneerTikka from "./Paneer Tikka.jpg";
-import SamosaChat from "./Samosa Chaat.jpg";
+import ChickenSeekhKebab from "./Chicken Seekh Kebab.webp";
+import DahiKeKebab from "./Dahi Ke Kebab.webp";
+import GaloutiKebab from "./Galouti Kebab.webp";
+import PaneerTikka from "./Paneer Tikka.webp";
+import SamosaChat from "./Samosa Chaat.webp";
 export {
   ChickenSeekhKebab,
   DahiKeKebab,

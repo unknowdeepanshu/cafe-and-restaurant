@@ -1,4 +1,4 @@
-import fork from "@/assets/decoration/fork.png";
+import fork from "@/assets/decoration/fork.webp";
 import { face1, face2, face3, face4 } from "@/assets/face";
 import {
   ReviweCard,

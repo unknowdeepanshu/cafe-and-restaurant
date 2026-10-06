@@ -1,5 +1,5 @@
-import designLine from "@/assets/decoration/LINE-removebg.png";
-import backLines from "@/assets/decoration/backgroundlines.png";
+import designLine from "@/assets/decoration/LINE-removebg.webp";
+import backLines from "@/assets/decoration/backgroundlines.webp";
 import Label from "@/ui/label/label";
 import { cn } from "@/lib/utils";
 

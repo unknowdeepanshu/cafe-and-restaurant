@@ -1,4 +1,4 @@
-import Forkknife from "@/assets/decoration/fork,knife,spoon .png";
+import Forkknife from "@/assets/decoration/fork,knife,spoon .webp";
 import { useIsMobile } from "@/hook/matchMedia";
 import { cn } from "@/lib/utils";
 import RestaurantButton from "@/ui/button/button";

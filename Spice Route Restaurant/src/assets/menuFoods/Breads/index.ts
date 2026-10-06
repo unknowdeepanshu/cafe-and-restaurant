@@ -1,13 +1,7 @@
-import ButterNaan from "./Butter Naan.jpg";
-import GarlicNaan from "./Garlic Naan.jpg";
-import LacchaParatha from "./Laccha Paratha.jpg";
-import PeshawariNaan from "./Peshawari Naan.jpg";
-import TandooriRoti from "./Tandoori Roti.jpg";
+import ButterNaan from "./Butter Naan.webp";
+import GarlicNaan from "./Garlic Naan.webp";
+import LacchaParatha from "./Laccha Paratha.webp";
+import PeshawariNaan from "./Peshawari Naan.webp";
+import TandooriRoti from "./Tandoori Roti.webp";
 
-export {
-  ButterNaan,
-  GarlicNaan,
-  LacchaParatha,
-  PeshawariNaan,
-  TandooriRoti,
-};
+export { ButterNaan, GarlicNaan, LacchaParatha, PeshawariNaan, TandooriRoti };

@@ -1,4 +1,4 @@
-import FooterImage from "@/assets/footer/tables.png";
+import FooterImage from "@/assets/footer/tables.webp";
 import { SocialIcon } from "@/ui/scoiaMedia/socialIcon";
 
 import {

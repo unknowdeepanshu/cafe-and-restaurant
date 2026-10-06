@@ -1,4 +1,4 @@
-import BookingTable from "@/assets/bookingTable.png";
+import BookingTable from "@/assets/bookingTable.webp";
 import { cn } from "@/lib/utils";
 import RestaurantButton from "@/ui/button/button";
 import {

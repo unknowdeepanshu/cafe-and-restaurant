@@ -1,5 +1,5 @@
 import HeaderTitle from "@/components/headerTitle/headerTitle";
-import Ketchen from "@/assets/kitchen.png";
+import Ketchen from "@/assets/kitchen.webp";
 import {
   ExecutiveChefs,
   HeadChefs,
