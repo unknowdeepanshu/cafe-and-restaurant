@@ -145,9 +145,10 @@ function DesktopCarousel() {
               <img
                 src={img.imge}
                 alt={img.Title}
-                loading="lazy"
+                loading={index === 0 ? "eager" : "lazy"}
+                fetchPriority={index === 0 ? "high" : "auto"}
                 decoding="async"
-                className="absolute inset-0 h-full w-full object-fill"
+                className="absolute inset-0 h-full w-full object-cover"
               />
               <motion.span
                 animate={{
@@ -271,11 +272,12 @@ function MobileCarousel() {
               id="singleImage"
             >
               <img
-                loading="lazy"
-                decoding="async"
                 src={foodImage[nextNumber].imge}
                 alt={foodImage[nextNumber].Title}
-                className="absolute inset-0 h-full w-full object-fill"
+                loading={nextNumber === 0 ? "eager" : "lazy"}
+                fetchPriority={nextNumber === 0 ? "high" : "auto"}
+                decoding="async"
+                className="absolute inset-0 h-full w-full object-cover"
               />
               <motion.span
                 initial={{
