@@ -1,5 +1,4 @@
 import HeaderTitle from "@/components/headerTitle/headerTitle";
-import MenuHeader from "@/assets/HeaderImages/MenuHeader.webp";
 import { OpeningCard } from "@/components/opening/OpeningCard";
 import { IconDeviceMobile, IconMapPin, IconMail } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
@@ -30,6 +29,8 @@ const initialValues: BookingValues = {
 };
 
 function Contact() {
+  const MenuHeader =
+    "https://res.cloudinary.com/eqeizsgi/image/upload/v1791306200/MenuHeader.webp";
   const contactInfo = [
     {
       icon: (

@@ -1,4 +1,5 @@
-import Time from "@/assets/timing.webp";
+const Time =
+  "https://res.cloudinary.com/eqeizsgi/image/upload/v1791306193/timing.webp";
 import { OpeningCard } from "@/components/opening/OpeningCard";
 
 function OpeningSections() {

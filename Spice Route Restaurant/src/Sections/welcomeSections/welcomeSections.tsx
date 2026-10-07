@@ -1,5 +1,6 @@
-import decortion from "@/assets/decoration/decoration.webp";
-import welcome from "@/assets/welcome-2 1.webp";
+import { decoration } from "@/assets/decoration";
+const welcome =
+  "https://res.cloudinary.com/eqeizsgi/image/upload/v1791306194/welcome-2_1.webp";
 function WelcomeSections() {
   return (
     <>
@@ -40,14 +41,14 @@ function WelcomeSections() {
           </div>
         </div>
         <img
-          src={decortion}
+          src={decoration}
           alt="decortion"
           className="absolute top-0 right-0 -z-1 opacity-18"
           loading="lazy"
           decoding="async"
         />
         <img
-          src={decortion}
+          src={decoration}
           alt="decortion"
           className="absolute bottom-0 left-0 -z-1 rotate-180 opacity-18"
           loading="lazy"

@@ -1,5 +1,4 @@
-import designLine from "@/assets/decoration/LINE-removebg.webp";
-import backLines from "@/assets/decoration/backgroundlines.webp";
+import { backgroundLines, designLine } from "@/assets/decoration";
 import Label from "@/ui/label/label";
 import { cn } from "@/lib/utils";
 
@@ -25,7 +24,7 @@ function OpeningCard({ className }: OpeningCardProps) {
 
         <div className="relative flex min-h-0 w-full flex-1 flex-col items-center justify-center gap-5 overflow-hidden p-10">
           <img
-            src={backLines}
+            src={backgroundLines}
             alt="backLines"
             className="absolute -z-1 h-full w-full object-fill opacity-70"
           />

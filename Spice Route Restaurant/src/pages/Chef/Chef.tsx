@@ -1,5 +1,4 @@
 import HeaderTitle from "@/components/headerTitle/headerTitle";
-import Ketchen from "@/assets/kitchen.webp";
 import {
   ExecutiveChefs,
   HeadChefs,
@@ -25,6 +24,8 @@ const scoliadMedia = [
   <IconBrandYoutube color="#ffffff" />,
 ];
 function Chef() {
+  const Ketchen =
+    "https://res.cloudinary.com/eqeizsgi/image/upload/v1791306192/kitchen.webp";
   const chefList = [
     {
       ChefImg: ExecutiveChefs,

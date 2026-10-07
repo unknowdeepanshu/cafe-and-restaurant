@@ -1,4 +1,4 @@
-import Forkknife from "@/assets/decoration/fork,knife,spoon .webp";
+import { forkKnifeSpoon } from "@/assets/decoration";
 import { useIsMobile } from "@/hook/matchMedia";
 import { cn } from "@/lib/utils";
 import RestaurantButton from "@/ui/button/button";
@@ -146,7 +146,11 @@ function MenuTab({ active, SetActive }: MenuTabProps) {
           </>
         ) : (
           <>
-            <img src={Forkknife} alt="Forkknife" className="h-[10%] w-[10%]" />
+            <img
+              src={forkKnifeSpoon}
+              alt="Forkknife"
+              className="h-[10%] w-[10%]"
+            />
             <div className="flex h-fit w-fit items-center justify-center p-10">
               <div className="border-line-300 flex h-fit w-full items-center justify-center border-2">
                 <div className="flex h-full w-full gap-2 p-2 lg:gap-8 lg:p-5">
@@ -168,7 +172,11 @@ function MenuTab({ active, SetActive }: MenuTabProps) {
                 </div>
               </div>
             </div>
-            <img src={Forkknife} alt="Forkknife" className="h-[10%] w-[10%]" />
+            <img
+              src={forkKnifeSpoon}
+              alt="Forkknife"
+              className="h-[10%] w-[10%]"
+            />
           </>
         )}
       </div>

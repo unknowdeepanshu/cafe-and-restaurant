@@ -1,11 +1,14 @@
-import decortion from "@/assets/decoration/decoration.webp";
-import Kebab from "@/assets/menuThree/Lamb Seekh Kebab.webp";
-import Chat from "@/assets/menuThree/Samosa Chaat.webp";
-import Chicken from "@/assets/menuThree/Butter chicken.webp";
+import { decoration } from "@/assets/decoration";
 import { motion } from "motion/react";
 import { NavLink } from "react-router";
 
 function MenuSection() {
+  const Kebab =
+    "https://res.cloudinary.com/eqeizsgi/image/upload/v1791306208/Lamb_Seekh_Kebab.webp";
+  const Chat =
+    "https://res.cloudinary.com/eqeizsgi/image/upload/v1791306207/Samosa_Chaat.webp";
+  const Chicken =
+    "https://res.cloudinary.com/eqeizsgi/image/upload/v1791306208/Butter_chicken.webp";
   const foods = [
     {
       Image: Kebab,
@@ -63,14 +66,14 @@ function MenuSection() {
           </div>
         </div>
         <img
-          src={decortion}
+          src={decoration}
           alt="decortion"
           className="absolute top-0 right-0 -z-1 opacity-18"
           loading="lazy"
           decoding="async"
         />
         <img
-          src={decortion}
+          src={decoration}
           alt="decortion"
           className="absolute bottom-0 left-0 -z-1 rotate-180 opacity-18"
           loading="lazy"

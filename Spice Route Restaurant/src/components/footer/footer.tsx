@@ -1,4 +1,3 @@
-import FooterImage from "@/assets/footer/tables.webp";
 import { SocialIcon } from "@/ui/scoiaMedia/socialIcon";
 
 import {
@@ -29,7 +28,9 @@ function Footer() {
           </div>
           <div className="relative flex h-full w-full flex-col md:w-1/2">
             <img
-              src={FooterImage}
+              src={
+                "https://res.cloudinary.com/eqeizsgi/image/upload/v1791306193/bookingTable.png"
+              }
               alt="FooterImage"
               loading="lazy"
               decoding="async"

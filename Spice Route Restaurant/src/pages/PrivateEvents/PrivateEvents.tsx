@@ -1,4 +1,3 @@
-import Event from "@/assets/event.webp";
 import { useState } from "react";
 import { InputBox, type Field } from "@/ui/Inputbox/Inputbox";
 
@@ -65,6 +64,8 @@ const formFieldsData: Field[] = [
   },
 ];
 function PrivateEvents() {
+  const Event =
+    "https://res.cloudinary.com/eqeizsgi/image/upload/v1791306192/event.webp";
   const [formData, setFormData] = useState<Record<string, string>>({
     name: "",
     email: "",

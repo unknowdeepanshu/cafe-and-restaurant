@@ -1,4 +1,3 @@
-import BookingTable from "@/assets/bookingTable.webp";
 import { cn } from "@/lib/utils";
 import RestaurantButton from "@/ui/button/button";
 import {
@@ -29,6 +28,8 @@ const initialValues: BookingValues = {
 };
 
 function BookingSection() {
+  const BookingTable =
+    "https://res.cloudinary.com/eqeizsgi/image/upload/v1791306193/bookingTable.png";
   const [values, setValues] = useState<BookingValues>(initialValues);
 
   const handleChange = (name: keyof BookingValues, value: string) => {
